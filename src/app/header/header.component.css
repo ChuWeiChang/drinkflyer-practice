@@ -1,0 +1,85 @@
+.header-container {
+  position: sticky; /* Makes the header stick to the top */
+  top: 0; /* Sticks the header to the top of the viewport */
+  display:flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+  background-color: black;
+}
+.header-panel {
+  position: sticky; /* Makes the header stick to the top */
+  top: 0; /* Sticks the header to the top of the viewport */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo-container {
+  margin-left: 1rem;
+  margin-top:1rem;
+  margin-right: 1rem;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
+  cursor: pointer;
+}
+.theme-icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+/*for search container*/
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+/* cart panel*/
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -40%; /* Start off-screen on the right */
+  width: 40%; /* Takes up half the screen */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  transition: right 0.5s ease-in-out; /* Slide-in transition */
+  z-index: 3;
+}
+
+.cart-panel.open {
+  right: 0; /* Slide in the panel */
+}
+
+.cart-panel .cart-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+.cart-panel .cart-content .close-btn{
+  margin-right: 10px;
+}
+.cart-panel .cart-items {
+  display: flex;
+  justify-content: center;
+}
+
+.backdrop {
+  position: fixed; /* Cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); /* Fully transparent */
+  z-index: 2; /* Below the cart panel but above everything else */
+  pointer-events: all; /* Capture all clicks to disable interaction */
+}
