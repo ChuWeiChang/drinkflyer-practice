@@ -16,7 +16,7 @@ export class DiscountBarComponent {
 
   constructor() {
     // Push the same text multiple times to create an effect of continuous scrolling
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 15; i++) {
       this.texts.push(this.text);
     }
   }
