@@ -11,7 +11,7 @@
 .scrolling-text-wrapper {
   display: flex;
   width: auto;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
   cursor: pointer;
 }
 /* Define the scroll animation */
@@ -41,7 +41,7 @@
   width: 10px; /* Set width for the square */
   height: 10px; /* Set height for the square */
   fill: white; /* Set the fill color of the square */
-  animation: rotate-clockwise 2s linear infinite;
+  animation: rotate-clockwise 3s linear infinite;
 }
 @keyframes rotate-clockwise {
   0% {
