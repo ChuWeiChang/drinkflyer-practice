@@ -17,4 +17,9 @@
     <path d="M31.6522 43.1304C31.6522 43.8915 31.9545 44.6214 32.4926 45.1595C33.0308 45.6977 33.7607 46 34.5217 46C35.2828 46 36.0127 45.6977 36.5508 45.1595C37.089 44.6214 37.3913 43.8915 37.3913 43.1304C37.3913 42.3694 37.089 41.6395 36.5508 41.1013C36.0127 40.5632 35.2828 40.2609 34.5217 40.2609C33.7607 40.2609 33.0308 40.5632 32.4926 41.1013C31.9545 41.6395 31.6522 42.3694 31.6522 43.1304V43.1304Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 
   </symbol>
+
+  <symbol id="icon-close" viewBox="0 0 48 48" fill="none">
+    <path d="M46 2L2 46" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M46 46L2 2" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>

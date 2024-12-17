@@ -13,9 +13,12 @@ import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  isContentVisible: boolean = true;
+  isSearch: boolean = false;
 
-  clearContainer() {
-    this.isContentVisible = false; // Hides the content
+  searchClick() {
+    this.isSearch = true; // Hides the content
+  }
+  leaveSearch() {
+    this.isSearch = false; // Shows the content
   }
 }
