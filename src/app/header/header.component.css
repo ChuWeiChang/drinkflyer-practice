@@ -1,14 +1,18 @@
 .header-container {
+  position: sticky; /* Makes the header stick to the top */
+  top: 0; /* Sticks the header to the top of the viewport */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-color: blueviolet;
-  border: 1px solid;
+  border: 1px solid blueviolet;
+  height: 40px;
 }
 .logo-container {
-  display: flex;
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically */
-  height: 50px; /* Optional: sets the height of the container to full viewport height */
+  margin-left: 1rem;
+  margin-top:1rem;
+  margin-right: 1rem;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
 }
+
