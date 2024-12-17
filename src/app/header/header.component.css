@@ -8,7 +8,7 @@
   height: 60px;
   background-color: black;
 }
-.panel {
+.header-panel {
   position: sticky; /* Makes the header stick to the top */
   top: 0; /* Sticks the header to the top of the viewport */
   display: flex;
@@ -51,10 +51,6 @@
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
   transition: right 0.5s ease-in-out; /* Slide-in transition */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
 }
 
 .cart-panel.open {
@@ -62,18 +58,17 @@
 }
 
 .cart-panel .cart-content {
-  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+.cart-panel .cart-content .close-btn{
+  margin-right: 10px;
+}
+.cart-panel .cart-items {
+  display: flex;
+  justify-content: center;
 }
 
-.cart-panel .close-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.cart-panel.open {
-  right: 0; /* Slide in the panel */
-}

@@ -1,5 +1,5 @@
 <div class="header-container" >
-  <div class="panel" *ngIf="!isSearch">
+  <div class="header-panel" *ngIf="!isSearch">
     <app-header-leftbar></app-header-leftbar>
     <div class="logo-container ">
       <img ngSrc="assets/images/header/Flyers_Logotype_Stacked_2color_ondark.png" width="150" height="50" alt="Logo" class="logo">
@@ -10,7 +10,7 @@
       <svg class="theme-icon" (click)="toggleCart()"><use href="assets/icons/icons.svg#icon-cart"></use></svg>
     </div>
   </div>
-  <div class="search-container" *ngIf="isSearch">
+  <div class="search-container" *ngIf="isSearch" >
     <div class="search-form">
       <svg class="theme-icon searching"><use href="assets/icons/icons.svg#icon-search"></use></svg>
       <input type="text" class="search-input" placeholder="Search..." >
@@ -22,10 +22,12 @@
 <!-- Sliding Panel -->
 <div class="cart-panel" [ngClass]="{'open': isCartOpen}">
   <div class="cart-content">
-    <h2>Cart</h2>
-    <p>Your cart is empty.</p>
+    <h4>Your Cart</h4>
+    <svg class="theme-icon close-btn" (click)="toggleCart()">
+      <use href="assets/icons/icons.svg#icon-close"></use>
+    </svg>
   </div>
-  <svg class="theme-icon close-btn" (click)="toggleCart()">
-    <use href="assets/icons/icons.svg#icon-close"></use>
-  </svg>
+  <div class="cart-items">
+    <p>Your cart is currently empty.</p>
+  </div>
 </div>
