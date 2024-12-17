@@ -4,20 +4,28 @@
 
 <div *ngIf="isOpen" class="backdrop"></div>
 <div class="left-bar-panel" [ngClass]="{'open': isOpen}">
+
+  <svg class="theme-icon close-btn" id="left-bar-btn" (click)="toggleSidebar()">
+    <use href="assets/icons/icons.svg#icon-close"></use>
+  </svg>
+
   <ul class="links">
     <li><a href="#">SHOP ALL </a></li>
     <li><a href="#">FAQ</a></li>
     <li><a href="#">CONTACTS</a></li>
     <li><a href="#">REVIEWS</a></li>
   </ul>
-  <svg class="theme-icon close-btn" (click)="toggleSidebar()">
-    <use href="assets/icons/icons.svg#icon-close"></use>
-  </svg>
-  <div class="account">
+
+  <div class="links account">
     <a href="#">Log in</a>
     <a href="#">Create account</a>
   </div>
-  <ul class="links social-medias">
+  <form class="search-form">
+    <input type="search" placeholder="Search">
+    <svg class="theme-icon searching"><use href="assets/icons/icons.svg#icon-search"></use></svg>
+  </form>
+
+  <ul class="social-medias">
     <li>
       <a href="https://instagram.com" target="_blank" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
@@ -25,7 +33,7 @@
     </li>
     <li>
       <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
-        <svg class="theme-icon"><use href="assets/icons/icons.svg#icon-tiktok"></use></svg>
+        <svg class="tiktok"><use href="assets/icons/icons.svg#icon-tiktok"></use></svg>
       </a>
     </li>
     <li>
@@ -39,6 +47,5 @@
       </a>
     </li>
   </ul>
-
 
 </div>

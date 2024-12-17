@@ -2,6 +2,7 @@
   margin-left:1.5rem;
   cursor: pointer;
 }
+
 .left-bar-panel {
   position: fixed;
   top: 0;
@@ -13,11 +14,13 @@
   transition: left 0.5s ease-in-out; /* Slide-in transition */
   z-index: 3;
   display: flex;
+  flex-direction: column;
 }
 
 .left-bar-panel.open {
   left: 0; /* Slide in the panel */
 }
+
 .backdrop {
   position: fixed; /* Cover the entire viewport */
   top: 0;
@@ -28,16 +31,78 @@
   z-index: 2; /* Below the cart panel but above everything else */
   pointer-events: all; /* Capture all clicks to disable interaction */
 }
+/* links */
+ul.links {
+  font-size: 15px;
+  padding-left: 1rem;
+}
+.links.account {
+  display: flex; /* Align items in a row */
+  flex-direction: column;
+  gap: 0.5rem; /* Adds space between the links */
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.search-form {
+  display: flex; /* Use flex to align input and svg */
+  align-items: flex-start;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.search-form input {
+  padding-right: 2rem; /* Give space for the icon */
+  width: 80%; /* Make the input take up the available width */
+  z-index: 1;
+}
+
+.search-form .theme-icon.searching {
+  z-index: 2; /* Ensure the icon is above the input */
+}
+.social-medias{
+  display: flex;
+  padding-left: 2rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  ul.links {
+    font-size: 20px;
+    padding-left: 2rem;
+  }
+  .links.account {
+    padding-left: 2rem;
+  }
+}
+
+/* some components*/
 .theme-icon{
   width: 20px;
   height: 20px;
   cursor: pointer;
-  padding-right: 10px;
 }
+
+#left-bar-btn{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+
+.tiktok{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
 ul {
-  list-style-type: none; /* Removes the default bullets */
-  padding-left: 0; /* Removes left padding */
+  list-style-type: none;
+  padding-left: 0;
 }
-a i {
-  color: white; /* Make the icon white */
+.links a{
+  text-decoration: none;
+  color: white;
+}
+
+.social-medias li a{
+  color: white;
 }
