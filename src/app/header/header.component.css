@@ -1,0 +1,14 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-color: blueviolet;
+  border: 1px solid;
+}
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  height: 50px; /* Optional: sets the height of the container to full viewport height */
+}
