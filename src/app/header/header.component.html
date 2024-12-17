@@ -6,8 +6,8 @@
     </div>
     <div class="right-container">
       <svg class="theme-icon"><use href="assets/icons/icons.svg#icon-user"></use></svg>
-      <svg class="theme-icon" (click)="searchClick()"><use href="assets/icons/icons.svg#icon-search"></use></svg>
-      <svg class="theme-icon"><use href="assets/icons/icons.svg#icon-cart"></use></svg>
+      <svg class="theme-icon" (click)="toggleSearch()"><use href="assets/icons/icons.svg#icon-search"></use></svg>
+      <svg class="theme-icon" (click)="toggleCart()"><use href="assets/icons/icons.svg#icon-cart"></use></svg>
     </div>
   </div>
   <div class="search-container" *ngIf="isSearch">
@@ -15,8 +15,17 @@
       <svg class="theme-icon searching"><use href="assets/icons/icons.svg#icon-search"></use></svg>
       <input type="text" class="search-input" placeholder="Search..." >
     </div>
-    <svg class="theme-icon" (click)="leaveSearch()"><use href="assets/icons/icons.svg#icon-close"></use></svg>
+    <svg class="theme-icon" (click)="toggleSearch()"><use href="assets/icons/icons.svg#icon-close"></use></svg>
   </div>
 </div>
 
-
+<!-- Sliding Panel -->
+<div class="cart-panel" [ngClass]="{'open': isCartOpen}">
+  <div class="cart-content">
+    <h2>Cart</h2>
+    <p>Your cart is empty.</p>
+  </div>
+  <svg class="theme-icon close-btn" (click)="toggleCart()">
+    <use href="assets/icons/icons.svg#icon-close"></use>
+  </svg>
+</div>

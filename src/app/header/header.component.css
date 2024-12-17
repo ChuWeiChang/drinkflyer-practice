@@ -6,6 +6,7 @@
   padding-left: 10px;
   padding-right: 10px;
   height: 60px;
+  background-color: black;
 }
 .panel {
   position: sticky; /* Makes the header stick to the top */
@@ -13,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid green;
   width: 100%;
 }
 .logo-container {
@@ -39,4 +39,41 @@
   align-items: center;
   width: 100%;
   padding: 10px;
+}
+
+/* cart panel*/
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -50%; /* Start off-screen on the right */
+  width: 50%; /* Takes up half the screen */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  transition: right 0.5s ease-in-out; /* Slide-in transition */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.cart-panel.open {
+  right: 0; /* Slide in the panel */
+}
+
+.cart-panel .cart-content {
+  padding: 20px;
+}
+
+.cart-panel .close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cart-panel.open {
+  right: 0; /* Slide in the panel */
 }

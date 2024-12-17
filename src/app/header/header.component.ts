@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgIf, NgOptimizedImage} from '@angular/common';
+import {NgClass, NgIf, NgOptimizedImage} from '@angular/common';
 import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component';
 
 @Component({
@@ -7,18 +7,20 @@ import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component
   imports: [
     NgOptimizedImage,
     HeaderLeftbarComponent,
-    NgIf
+    NgIf,
+    NgClass
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
   isSearch: boolean = false;
-
-  searchClick() {
-    this.isSearch = true; // Hides the content
+  toggleSearch() {
+    this.isSearch = !this.isSearch; // Hides the content
   }
-  leaveSearch() {
-    this.isSearch = false; // Shows the content
+
+  isCartOpen: boolean = false;
+  toggleCart() {
+    this.isCartOpen = !this.isCartOpen;
   }
 }
