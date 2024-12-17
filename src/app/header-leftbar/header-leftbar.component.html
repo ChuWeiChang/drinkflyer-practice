@@ -1,14 +1,44 @@
 <div class="left-bar">
-  <svg
-    class="theme-icon"
-    viewBox="0 0 48 48"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    (click)="toggleSidebar()"
-    width="24"
-    height="24">
-    <path d="M46 40H2" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M46 24H2" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M46 8H2" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <svg class="theme-icon" (click)="toggleSidebar()"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
+</div>
+
+<div *ngIf="isOpen" class="backdrop"></div>
+<div class="left-bar-panel" [ngClass]="{'open': isOpen}">
+  <ul class="links">
+    <li><a href="#">SHOP ALL </a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">CONTACTS</a></li>
+    <li><a href="#">REVIEWS</a></li>
+  </ul>
+  <svg class="theme-icon close-btn" (click)="toggleSidebar()">
+    <use href="assets/icons/icons.svg#icon-close"></use>
   </svg>
+  <div class="account">
+    <a href="#">Log in</a>
+    <a href="#">Create account</a>
+  </div>
+  <ul class="links social-medias">
+    <li>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+        <svg class="theme-icon"><use href="assets/icons/icons.svg#icon-tiktok"></use></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+  </ul>
+
+
 </div>

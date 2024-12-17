@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
-
+import {NgClass, NgIf} from '@angular/common';
 @Component({
   selector: 'app-header-leftbar',
-  imports: [],
+  imports: [
+    NgIf,
+    NgClass
+  ],
   templateUrl: './header-leftbar.component.html',
   styleUrl: './header-leftbar.component.css'
 })
 export class HeaderLeftbarComponent {
+  isOpen: boolean = false;
   toggleSidebar() {
-    // Logic to open/close sidebar
-    console.log('Sidebar toggled');
-    // You could add a boolean variable here to manage sidebar visibility
+    this.isOpen = !this.isOpen;
   }
 }
