@@ -20,6 +20,7 @@
 </div>
 
 <!-- Sliding Panel -->
+<div *ngIf="isCartOpen" class="backdrop"></div>
 <div class="cart-panel" [ngClass]="{'open': isCartOpen}">
   <div class="cart-content">
     <h4>Your Cart</h4>
