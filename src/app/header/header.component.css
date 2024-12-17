@@ -45,8 +45,8 @@
 .cart-panel {
   position: fixed;
   top: 0;
-  right: -50%; /* Start off-screen on the right */
-  width: 50%; /* Takes up half the screen */
+  right: -40%; /* Start off-screen on the right */
+  width: 40%; /* Takes up half the screen */
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
