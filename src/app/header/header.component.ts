@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
+import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component';
 
 @Component({
   selector: 'app-header',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    HeaderLeftbarComponent
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  toggleSidebar() {
-    // Logic to open/close sidebar
-    console.log('Sidebar toggled');
-    // You could add a boolean variable here to manage sidebar visibility
-  }
+
 }
