@@ -1,0 +1,32 @@
+.scrolling-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.scrolling-text-wrapper {
+  display: flex;
+  width: auto;
+  animation: scroll-left 20s linear infinite;
+  cursor: pointer;
+}
+.scrolling-text-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Define the scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0); /* Start from the left edge */
+  }
+  100% {
+    transform: translateX(-50%); /* Move the wrapper completely out of view (half the width) */
+  }
+}
