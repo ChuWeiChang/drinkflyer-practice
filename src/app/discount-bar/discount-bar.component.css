@@ -1,0 +1,55 @@
+.scrolling-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  padding:5px
+}
+.scrolling-container:hover{
+  background-color: saddlebrown;
+}
+.scrolling-text-wrapper {
+  display: flex;
+  width: auto;
+  animation: scroll-left 30s linear infinite;
+  cursor: pointer;
+}
+/* Define the scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.scrolling-text-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 20px;
+  font-size: small;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.square-icon {
+  margin-left: 10px; /* Space between the text and the square */
+  width: 10px; /* Set width for the square */
+  height: 10px; /* Set height for the square */
+  fill: white; /* Set the fill color of the square */
+  animation: rotate-clockwise 3s linear infinite;
+}
+@keyframes rotate-clockwise {
+  0% {
+    transform: rotate(0deg); /* Start from 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate clockwise to 360 degrees */
+  }
+}
+
+
