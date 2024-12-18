@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {DiscountBarComponent} from './discount-bar/discount-bar.component';
 import {HeaderComponent} from './header/header.component';
 import {HeroBannerComponent} from './hero-banner/hero-banner.component';
@@ -15,7 +15,8 @@ import {FootersComponent} from './footers/footers.component';
   selector: 'app-root',
   imports: [DiscountBarComponent, HeaderComponent, HeroBannerComponent, MerchandiseListComponent, ProductFeatureComponent, ProductFeatureBannerComponent, SecondaryHeroBannerComponent, PartnersComponent, UserCommentsComponent, FAQComponent, FootersComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'drinkflyers';
