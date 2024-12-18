@@ -66,7 +66,7 @@ ul.links {
   gap: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   ul.links {
     font-size: 20px;
     padding-left: 2rem;
