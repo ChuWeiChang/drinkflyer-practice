@@ -6,8 +6,8 @@
 .left-bar-panel {
   position: fixed;
   top: 0;
-  left: -40%; /* Start off-screen on the right */
-  width: 40%; /* Takes up half the screen */
+  left: -80%; /* Start off-screen on the right */
+  width: 80%; /* Takes up half the screen */
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
@@ -72,6 +72,10 @@ ul.links {
   }
   .links.account {
     padding-left: 2rem;
+  }
+  .left-bar-panel {
+    width: 40%;
+    left: 40%;
   }
 }
 
