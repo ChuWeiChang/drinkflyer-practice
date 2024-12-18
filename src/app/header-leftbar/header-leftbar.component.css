@@ -6,19 +6,20 @@
 .left-bar-panel {
   position: fixed;
   top: 0;
-  left: -80%; /* Start off-screen on the right */
-  width: 80%; /* Takes up half the screen */
+  left: -80%;
+  width: 80%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
-  transition: left 0.5s ease-in-out; /* Slide-in transition */
   z-index: 3;
   display: flex;
   flex-direction: column;
 }
-
+.left-bar-panel.animation{
+  transition: left 0.5s ease-in-out;
+}
 .left-bar-panel.open {
-  left: 0; /* Slide in the panel */
+  left: 0;
 }
 
 .backdrop {
@@ -74,8 +75,8 @@ ul.links {
     padding-left: 2rem;
   }
   .left-bar-panel {
-    left: -40%; /* Start off-screen on the right */
-    width: 40%; /
+    left: -40%;
+    width: 40%;
   }
 }
 
