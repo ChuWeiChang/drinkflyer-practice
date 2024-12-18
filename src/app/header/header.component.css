@@ -45,17 +45,25 @@
 .cart-panel {
   position: fixed;
   top: 0;
-  right: -40%; /* Start off-screen on the right */
-  width: 40%; /* Takes up half the screen */
+  right: -80%; /* Start off-screen on the right */
+  width: 80%; /* Takes up half the screen */
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
-  transition: right 0.5s ease-in-out; /* Slide-in transition */
   z-index: 3;
 }
-
+.cart-panel.animation{
+  transition: right 0.5s ease-in-out; /* Slide-in transition */
+}
 .cart-panel.open {
   right: 0; /* Slide in the panel */
+}
+
+@media (min-width: 768px) {
+  .cart-panel {
+    right: -40%;
+    width: 40%;
+  }
 }
 
 .cart-panel .cart-content {

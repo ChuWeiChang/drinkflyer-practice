@@ -21,7 +21,7 @@
 
 <!-- Sliding Panel -->
 <div *ngIf="isCartOpen" class="backdrop"></div>
-<div class="cart-panel" [ngClass]="{'open': isCartOpen}">
+<div class="cart-panel" [ngClass]="{'open': isCartOpen, 'animation':animation}">
   <div class="cart-content">
     <h4>Your Cart</h4>
     <svg class="theme-icon close-btn" (click)="toggleCart()">
