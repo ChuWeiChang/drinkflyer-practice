@@ -1,0 +1,44 @@
+/* Ensure the container takes the full viewport */
+.banner-container {
+  position: relative;
+  width:100vw;
+  height:auto;
+  aspect-ratio: 905/1067;
+  border: 1px solid crimson;
+}
+
+/* Styles for the responsive image */
+.image-and-sticker img.responsive-banner {
+  position: absolute;
+  width: 100%; /* Ensure it stretches across the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Avoid cropping or distortion */
+  object-position: top;
+  z-index: 1; /* Stack it properly if needed */
+}
+
+@media (min-width: 1000px) {
+  .banner-container {
+    aspect-ratio: 2000/839;
+  }
+}
+.image-and-sticker img.sticker {
+  position: absolute;
+  top: 5%; /* Adjust to your preference */
+  right: 0; /* Adjust to your preference */
+  width: 250px;
+  height: auto;
+  z-index: 1; /* Make sure sticker is on top */
+}
+
+/*!* Style the button *!*/
+.banner-btn {
+  position: absolute;
+  bottom: 10%;
+  border:none;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 2; /* Ensure it's on top of the image */
+}

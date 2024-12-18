@@ -1,1 +1,12 @@
-<p>hero-banner works!</p>
+<div class="banner-container">
+  <div class="image-and-sticker">
+    @if(windowSizeConfirmed){
+      <img class="responsive-banner" [ngSrc]="imgSrc" alt="hero banner" priority fill >
+    }
+    @if(displaySticker){
+      <img class="sticker" ngSrc="assets/images/hero-banner/HolidayGlasses_sticker.png" width="460" height="583" alt="hero banner">
+    }
+
+  </div>
+  <button class="banner-btn">SHOP NOW</button>
+</div>
