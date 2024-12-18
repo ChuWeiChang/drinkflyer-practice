@@ -20,7 +20,13 @@ export class HeaderComponent {
   }
 
   isCartOpen: boolean = false;
+  animation: boolean = false;
   toggleCart() {
     this.isCartOpen = !this.isCartOpen;
+    if (this.isCartOpen){
+      this.animation = !this.animation;
+    } else{
+      setTimeout(() => {this.animation = !this.animation;}, 500); // 2000 milliseconds = 2 seconds
+    }
   }
 }

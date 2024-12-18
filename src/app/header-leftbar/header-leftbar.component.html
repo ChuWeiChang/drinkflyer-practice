@@ -3,7 +3,7 @@
 </div>
 
 <div *ngIf="isOpen" class="backdrop"></div>
-<div class="left-bar-panel" [ngClass]="{'open': isOpen}">
+<div class="left-bar-panel" [ngClass]="{'open': isOpen, 'animation':animation}">
 
   <svg class="theme-icon close-btn" id="left-bar-btn" (click)="toggleSidebar()">
     <use href="assets/icons/icons.svg#icon-close"></use>
