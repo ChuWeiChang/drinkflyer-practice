@@ -2,21 +2,23 @@
   <div class="merchandise-drink">
     <img [ngSrc]="url" [alt]="name" fill>
   </div>
+  <div class="merchandise-name">
+    <p>{{name}}</p>
+  </div>
   <div class="merchandise-rating">
     <div class="merchandise-stars">
-      <svg class="theme-icon stars"><use href="assets/icons/icons.svg#icon-star"></use></svg>
-      <svg class="theme-icon stars"><use href="assets/icons/icons.svg#icon-star"></use></svg>
-      <svg class="theme-icon stars"><use href="assets/icons/icons.svg#icon-star"></use></svg>
-      <svg class="theme-icon stars"><use href="assets/icons/icons.svg#icon-star"></use></svg>
-      <svg class="theme-icon stars"><use href="assets/icons/icons.svg#icon-star"></use></svg>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
     </div>
     <div class="merchandise-comments">
       <p>{{reviews}} Reviews</p>
     </div>
-    <div class="merchandise-price">
-      <p>{{price| currency:'USD':'symbol':'1.2-2' }}</p>
-    </div>
-
+  </div>
+  <div class="merchandise-price">
+    <p>{{price| currency:'USD':'symbol':'1.2-2' }}+</p>
   </div>
 </div>
 
