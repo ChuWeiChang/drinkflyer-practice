@@ -1,6 +1,33 @@
 .item-container{
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.merchandise-drink img{
-  object-fit: contain;
+.merchandise-drink {
+  position: relative;
+  width: 40vw;  /* Makes sure the drink container takes full width of its parent */
+  height: 300px; /* Define a fixed height (or auto based on content) */
+}
+
+img {
+  object-fit: contain; /* Ensures the image fits within the container, maintaining its aspect ratio */
+}
+.merchandise-name{
+
+}
+.merchandise-rating {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.merchandise-stars{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.merchandise-stars i {
+  color: gold;
+  font-size: 20px;
+  margin-right: 4px;
 }
