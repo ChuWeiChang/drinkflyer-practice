@@ -13,7 +13,7 @@
 }
 
 img {
-  object-fit: fill; /* Ensures the image fits within the container, maintaining its aspect ratio */
+  object-fit: cover; /* Ensures the image fits within the container, maintaining its aspect ratio */
   border-radius: 10px;
 }
 .merchandise-name{
