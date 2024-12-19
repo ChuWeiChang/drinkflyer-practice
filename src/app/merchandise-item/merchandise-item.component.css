@@ -2,18 +2,26 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .merchandise-drink {
   position: relative;
-  width: 40vw;  /* Makes sure the drink container takes full width of its parent */
-  height: 300px; /* Define a fixed height (or auto based on content) */
+  width: 90%;  /* Sets the width of the container */
+  aspect-ratio: 420/500;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 img {
-  object-fit: contain; /* Ensures the image fits within the container, maintaining its aspect ratio */
+  object-fit: fill; /* Ensures the image fits within the container, maintaining its aspect ratio */
+  border-radius: 10px;
 }
 .merchandise-name{
-
+  display: inline-block;
+}
+.merchandise-name p {
+  margin: 0; /* Remove any default margin from the p element */
+  padding: 0; /* Remove padding, if any, that may affect the height */
 }
 .merchandise-rating {
   height: 50px;

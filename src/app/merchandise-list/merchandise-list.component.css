@@ -10,11 +10,13 @@
   gap: 10px; /* Optional spacing */
   width: 100%;
   margin-right: 10px;
-  border: 1px solid green;
 }
 
 app-merchandise-item {
-  border: 1px solid red; /* Border for each grid item */
-  padding: 10px; /* Optional padding inside the item */
-  text-align: center; /* Optional: center the text */
+  border: 1px solid gold;
+  padding: 10px;
+  text-align: center;
+}
+.merchandise-list.title{
+  text-align: center;
 }
