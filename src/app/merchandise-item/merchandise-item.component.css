@@ -1,0 +1,6 @@
+.item-container{
+  position: relative;
+}
+.merchandise-drink img{
+  object-fit: contain;
+}
