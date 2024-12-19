@@ -1,1 +1,17 @@
-<p>merchandise-list works!</p>
+<div class="merchandise-list-container">
+  <div class="merchandise-list title">
+    <h1>UPLIFT YOUR DRINKING RITUAL</h1>
+    <h2>Relax with alcohol-free cocktails enhanced with 5MG of Hemp THC.</h2>
+  </div>
+  <div class="merchandise-list list">
+    @for (item of items; track item.name){
+      <app-merchandise-item
+        [name] = "item.name"
+        [url] = "dir_path + item.filename"
+        [urlOnHover] = "dir_path + item.filenameOnHover"
+        [reviews] = "item.review"
+        [price] = "item.price">
+      </app-merchandise-item>
+    }
+  </div>
+</div>
