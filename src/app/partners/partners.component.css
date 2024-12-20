@@ -7,13 +7,14 @@
   position: relative;
   justify-content: center;
   align-items: flex-start;
+  align-content: flex-start;
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
 }
 .image-wrapper{
   position: relative;
-  height: 20%;
+  height: 15%;
   width: 100%;
 }
 img {
