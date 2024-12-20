@@ -1,16 +1,16 @@
 .merchandise-list-container{
   position: relative;
   width: 100vw;
-  border: 1px red solid;
 }
 
 .merchandise-list.list{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  gap: 1rem; /* Optional spacing */
   width: 100vw;
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 @media (min-width: 60rem) {
   .merchandise-list.list{
@@ -23,7 +23,6 @@ app-merchandise-item {
   border: 1px solid gold;
   padding: 1rem;
   text-align: center;
-  margin :1rem;
 }
 .merchandise-list.title{
   text-align: center;

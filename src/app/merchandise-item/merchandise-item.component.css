@@ -9,6 +9,7 @@
   position: relative;
   width: 90%;  /* Sets the width of the container */
   aspect-ratio: 420/500;
+  box-sizing: border-box;
   padding: 10px;
   margin-bottom: 10px;
 }
