@@ -1,0 +1,11 @@
+<div class="product-feature-list-container">
+  <div class="product-feature-list list">
+    @for (item of items; track item.id){
+      <app-product-feature-list-item
+        [description] = "item.description"
+        [url] = "dir_path + item.filename"
+        [btnText] = "item.btnText">
+      </app-product-feature-list-item>
+    }
+  </div>
+</div>

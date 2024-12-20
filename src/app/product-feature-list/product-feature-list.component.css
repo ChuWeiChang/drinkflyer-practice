@@ -1,0 +1,20 @@
+.product-feature-list-container{
+  position: relative;
+  width: 100%;
+}
+
+.product-feature-list{
+  display: flex;
+  flex-direction: column;
+}
+app-product-feature-list-item {
+  flex: 1;
+}
+
+
+@media (min-width: 60rem) {
+  .product-feature-list{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,4 +1,7 @@
 button {
   cursor: pointer;
   background-color: saddlebrown;
+  border:none;
+  padding: 1rem 1rem;
+  width: 10rem;
 }
