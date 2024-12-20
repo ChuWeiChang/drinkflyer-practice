@@ -12,7 +12,7 @@ app-product-feature-list-item {
 }
 
 
-@media (min-width: 60rem) {
+@media (min-width: 55rem) {
   .product-feature-list{
     flex-direction: row;
     justify-content: space-between;

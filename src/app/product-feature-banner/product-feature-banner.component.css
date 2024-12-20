@@ -13,7 +13,7 @@
   height: 50%;
   width: 90%;
 }
-@media (min-width: 60rem) {
+@media (min-width: 55rem) {
   .secondary-hero-banner-container{
     flex-direction: row;
     box-sizing: border-box;
