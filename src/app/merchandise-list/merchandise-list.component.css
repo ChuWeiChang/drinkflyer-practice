@@ -1,15 +1,15 @@
 .merchandise-list-container{
   position: relative;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .merchandise-list.list{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 10px; /* Optional spacing */
+  gap: 1rem; /* Optional spacing */
   width: 100%;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 @media (min-width: 1000px) {
   .merchandise-list.list{
@@ -19,7 +19,7 @@
 }
 app-merchandise-item {
   border: 1px solid gold;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
 }
 .merchandise-list.title{
