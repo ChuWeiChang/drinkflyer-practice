@@ -4,20 +4,21 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 70vh;
+  height: 150vh;
   width: 100vw;
 }
 
 .image-wrapper {
   position: relative;
-  height: 50%;
+  height: 60%;
   width: 90%;
 }
-@media (min-width: 55rem) {
+@media (min-width: 1000px) {
   .secondary-hero-banner-container{
     flex-direction: row;
     box-sizing: border-box;
     padding: 0 3rem 0 3rem;
+    height: 70vh;
   }
   .image-wrapper {
     height: 100%;
