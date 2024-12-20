@@ -5,3 +5,7 @@ button {
   padding: 1rem 1rem;
   width: 10rem;
 }
+p{
+  padding: 0;
+  margin: 0;
+}
