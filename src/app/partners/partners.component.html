@@ -1,1 +1,12 @@
-<p>partners works!</p>
+<div class="partner-container">
+  <div class="partner-title">
+    <h1>{{ "feature in" | uppercase }}</h1>
+  </div>
+  <div class="partner-list list">
+    @for (item of items; track item.id){
+      <div class="image-wrapper">
+        <img [ngSrc]="dir_path + item.filename" alt="item.id" fill>
+      </div>
+    }
+  </div>
+</div>
