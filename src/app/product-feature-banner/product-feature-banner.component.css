@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 150vh;
+  aspect-ratio: 1;
   width: 100vw;
 }
 
@@ -12,6 +12,9 @@
   position: relative;
   height: 60%;
   width: 90%;
+}
+img {
+  object-fit: contain;
 }
 @media (min-width: 1000px) {
   .secondary-hero-banner-container{
@@ -24,7 +27,4 @@
     height: 100%;
     box-sizing: border-box;
   }
-}
-img {
-  object-fit: contain;
 }
