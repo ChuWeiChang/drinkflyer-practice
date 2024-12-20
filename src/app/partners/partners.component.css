@@ -1,0 +1,48 @@
+.partner-container{
+  position: relative;
+  height: 50vh;
+}
+.partner-list {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.image-wrapper{
+  position: relative;
+  height: 15%;
+  width: 100%;
+}
+img {
+  object-fit: contain;
+}
+@media (min-width: 495px) {
+  .image-wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 720px) {
+  .image-wrapper {
+    width: 30%;
+  }
+}
+@media (min-width: 944px) {
+  .image-wrapper {
+    width: 23%;
+  }
+}
+@media (min-width: 990px) {
+  .image-wrapper {
+    width: 18%;
+  }
+}
+h1{
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
