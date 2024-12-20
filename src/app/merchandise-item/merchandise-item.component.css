@@ -1,0 +1,46 @@
+.item-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.merchandise-drink {
+  position: relative;
+  width: 90%;  /* Sets the width of the container */
+  aspect-ratio: 420/500;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  object-fit: cover; /* Ensures the image fits within the container, maintaining its aspect ratio */
+  border-radius: 10px;
+}
+.merchandise-name{
+  display: inline-block;
+}
+.merchandise-name p {
+  margin: 0; /* Remove any default margin from the p element */
+  padding: 0; /* Remove padding, if any, that may affect the height */
+}
+.merchandise-rating {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.merchandise-stars{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.merchandise-stars i {
+  color: gold;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+p{
+  color: white; /* Sets the text color to white */
+}
+

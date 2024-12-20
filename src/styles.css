@@ -1,8 +1,8 @@
 app-root {
   padding-top: 0;
-  background-color: pink;
+  background-color: black;
   display: block;
-  height: 150vh; /* Full height of the viewport */
+  height: 100%; /* Full height of the viewport */
 }/* You can add global styles to this file, and also import other style files */
 html, body {
   margin: 0;
