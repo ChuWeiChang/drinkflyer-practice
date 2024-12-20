@@ -1,5 +1,4 @@
-import {Component, Input} from '@angular/core';
-import {MerchandiseItemComponent} from '../merchandise-item/merchandise-item.component';
+import {Component} from '@angular/core';
 import {ProductFeatureListItemComponent} from '../product-feature-list-item/product-feature-list-item.component';
 
 @Component({
