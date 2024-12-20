@@ -8,15 +8,17 @@
   box-sizing: border-box;
   padding: 1rem;
 
+
 }
 .feature-item-img{
   position: relative;
   width: 100%;
   aspect-ratio: 1;
+
 }
 img{
-
   object-fit: contain;
+  border-radius: 5px;
 }
 p{
   text-align: center;
