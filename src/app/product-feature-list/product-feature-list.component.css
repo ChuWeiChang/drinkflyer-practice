@@ -1,0 +1,11 @@
+.product-feature-list-container{
+  position: relative;
+  width: 100vw;
+}
+
+.product-feature-list{
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+}
+
