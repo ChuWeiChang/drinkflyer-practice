@@ -1,5 +1,7 @@
 <div class="item-container">
-  <div class="merchandise-drink">
+  <div class="merchandise-drink"
+       (mouseover)="onHover()"
+       (mouseout)="onMouseOut()">
     <img [ngSrc]="url" [alt]="name" fill>
   </div>
   <div class="merchandise-name">

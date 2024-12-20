@@ -16,4 +16,20 @@ export class MerchandiseItemComponent {
   @Input() urlOnHover!: string;
   @Input() reviews !: number;
   @Input() price !: number;
+
+  ori_url ="";
+  constructor() {}
+
+  ngOnInit(): void {
+    this.ori_url = this.url;
+  }
+  onHover(): void {
+    this.url = this.urlOnHover;
+  }
+
+  onMouseOut(): void {
+    this.url = this.ori_url;
+  }
+
+
 }
