@@ -1,4 +1,30 @@
+.user-comment-block-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.user-comment-block-stars{
+  position:relative;
+  color: white;
+  height: 20%;
+  /*border: 1px white solid;*/
+}
+.user-comment-block-stars i{
+  position: relative;
+  top:50%;
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+}
+.user-comment-block-comment{
+  position:relative;
+  /*border: 1px white solid;*/
+  width: 80%;
+}
 p{
-  font-size: xx-large;
-  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
 }
