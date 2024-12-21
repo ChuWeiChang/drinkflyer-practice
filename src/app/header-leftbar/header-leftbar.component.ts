@@ -1,10 +1,9 @@
 import {Component} from '@angular/core';
-import {NgClass, NgIf} from '@angular/common';
+import {NgClass} from '@angular/common';
 import {BackdropService} from '../backdrop.service';
 @Component({
   selector: 'app-header-leftbar',
   imports: [
-    NgIf,
     NgClass
   ],
   templateUrl: './header-leftbar.component.html',
