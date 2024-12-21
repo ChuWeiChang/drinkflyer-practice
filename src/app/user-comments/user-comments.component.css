@@ -9,11 +9,14 @@
 }
 .scroll-element{
   display: flex;
-}
-.scroll-element.primary, .scroll-element.secondary{
   position: absolute;
   width: 100vw;
   height: 70%;
+  gap:10%
+}
+.scroll-element.primary, .scroll-element.secondary{
+  box-sizing: border-box;
+  padding-left: 1rem;
   /*border: yellow 1px solid;*/
 }
 
@@ -21,7 +24,7 @@ app-user-comment-block{
   display: block;
   flex-shrink: 0;
   position: relative;
-  width: 40%;
+  width: 70%;
   height: 100%;
   border: red 1px solid;
 }
