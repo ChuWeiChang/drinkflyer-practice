@@ -1,8 +1,7 @@
 .partner-container{
   position: relative;
-  height: 60vh;
+  height: 30rem;
   width: 100vw;
-
 }
 .partner-list {
   display: flex;
@@ -28,7 +27,7 @@ img {
 }
 @media (min-width: 720px) {
   .partner-container{
-    height: 40vh;
+    height: 20rem;
   }
   .partner-list {
     height: 80%;
