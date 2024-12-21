@@ -4,7 +4,9 @@
   height: 50vh;
   overflow: hidden;
   /*border: 1px tan solid;*/
-
+}
+.user-comments-container:hover .scroll-element{
+  animation-play-state: paused;
 }
 .scroll-element{
   display: flex;
@@ -13,8 +15,7 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.scroll-element.primary, .scroll-element.secondary{
-}
+
 .scroll-element.primary{
   animation: primary 30s linear infinite;
   /*border: red 1px solid;*/
