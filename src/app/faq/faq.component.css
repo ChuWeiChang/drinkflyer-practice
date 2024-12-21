@@ -1,0 +1,53 @@
+.faq-container {
+  width: 100%;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.accordions {
+  margin-bottom: 1rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items at the top */
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid sandybrown;
+}
+
+
+
+.faq-title {
+  text-align: left;
+  color: white;
+}
+
+.faq-context {
+  text-align: left;
+  color: white;
+  margin-top: 0.5rem;
+  max-height: 0; /* Initially hidden */
+  overflow: hidden;
+}
+
+.spread {
+  max-height: 60rem; /* Allow content to be fully shown */
+}
+
+.faq i {
+  color: white;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.rotate-icon {
+  transform: rotate(180deg); /* Rotate icon when active */
+  transition: transform 0.3s ease;
+}
+button{
+  background-color: transparent;
+}
+
