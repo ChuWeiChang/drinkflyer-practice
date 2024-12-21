@@ -1,1 +1,30 @@
-<p>user-comments works!</p>
+<!--<div class="scroll-parent">-->
+<!--  <div class="scroll-element primary">-->
+<!--  <p>How to make a loop animation.</p>-->
+<!--  <p>How to make a loop animation.</p>-->
+<!--  <p>How to make a loop animation.</p>-->
+<!--  <p>How to make a loop animation.</p>-->
+<!--  </div>-->
+<!--  <div class="scroll-element secondary">-->
+<!--    <p>How to make a loop animation.</p>-->
+<!--    <p>How to make a loop animation.</p>-->
+<!--    <p>How to make a loop animation.</p>-->
+<!--    <p>How to make a loop animation.</p>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="user-comments-container">
+  <div class="scroll-element primary">
+    @for(comment of commentBlocks; track comment.user){
+      <app-user-comment-block>
+      </app-user-comment-block>
+    }
+  </div>
+  <div class="scroll-element secondary">
+    @for(comment of commentBlocks; track comment.user){
+      <app-user-comment-block>
+      </app-user-comment-block>
+    }
+  </div>
+
+</div>

@@ -1,0 +1,79 @@
+.user-comments-container{
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 35vh;
+  overflow: hidden;
+  border: 1px tan solid;
+
+}
+.scroll-element{
+  display: flex;
+}
+.scroll-element.primary, .scroll-element.secondary{
+  position: absolute;
+  width: 100vw;
+  height: 70%;
+  /*border: yellow 1px solid;*/
+}
+
+app-user-comment-block{
+  display: block;
+  flex-shrink: 0;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  border: red 1px solid;
+}
+/*.scroll-parent {*/
+/*  position: relative;*/
+/*  display: flex; !* Use flexbox to align children horizontally *!*/
+/*  width: 100%;*/
+/*  height: 30px; !* Adjust height as needed *!*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*.scroll-element{*/
+/*  white-space: nowrap; !* Prevent text from wrapping *!*/
+/*  display: inline-block; !* Ensure elements stay on the same line *!*/
+/*}*/
+
+/*.scroll-element.primary{*/
+/*  width: 100%;*/
+/*  position: absolute;*/
+/*  animation: primary 3s linear infinite;*/
+/*}*/
+
+/*.scroll-element.secondary{*/
+/*  width: 100%;*/
+/*  position: absolute;*/
+/*  animation: secondary 3s linear infinite;*/
+/*}*/
+
+/*@keyframes primary {*/
+/*  from {*/
+/*    left: 0%;*/
+/*  }*/
+/*  to {*/
+/*    left: -100%;*/
+/*  }*/
+/*}*/
+/*@keyframes secondary {*/
+/*  from {*/
+/*    left: 100%;*/
+/*  }*/
+/*  to {*/
+/*    left: 0%;*/
+/*  }*/
+/*}*/
+
+
+
+p{
+  display: inline-block; /* Keep the <p> elements inline */
+  color: white;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+.secondary p{
+  color: yellow;
+}
