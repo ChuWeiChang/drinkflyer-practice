@@ -11,9 +11,9 @@ import {UserCommentBlockComponent} from '../user-comment-block/user-comment-bloc
 })
 export class UserCommentsComponent {
   commentBlocks = [
+    {user:"Gwen A.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
     {user:"Gwen B.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
-    {user:"Gwen B.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
-    {user:"Gwen B.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
-    {user:"Gwen B.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
+    {user:"Gwen C.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
+    {user:"Gwen D .", comment:"asssssssssssssssssssasssssssssssssasssssss"},
   ]
 }

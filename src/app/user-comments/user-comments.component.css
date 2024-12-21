@@ -1,7 +1,6 @@
 .user-comments-container{
   position: relative;
   display: flex;
-  width: 100vw;
   height: 50vh;
   overflow: hidden;
   border: 1px tan solid;
@@ -10,23 +9,30 @@
 .scroll-element{
   display: flex;
   position: absolute;
-  width: 100vw;
   height: 60%;
-  gap:10%
+  width: fit-content;
+  box-sizing: border-box;
 }
 .scroll-element.primary, .scroll-element.secondary{
   box-sizing: border-box;
   padding-left: 1rem;
-  /*border: yellow 1px solid;*/
 }
-
+.scroll-element.primary{
+  animation: primary 10s linear infinite;
+  border: red 1px solid;
+}
+.scroll-element.secondary{
+  animation: secondary 10s linear infinite;
+  border: yellow 1px solid;
+}
 app-user-comment-block{
   display: block;
   flex-shrink: 0;
   position: relative;
-  width: 70%;
+  width: 70vw;
   height: 100%;
-  border: red 1px solid;
+  border: green 1px solid;
+
 }
 .ctrl-btn{
   position: absolute;
@@ -34,7 +40,6 @@ app-user-comment-block{
   right: 5%;
   height: 20%;
   width: 6rem;
-  border: yellow 1px solid;
   display: flex;
   justify-content: space-between;
 }
@@ -43,52 +48,27 @@ app-user-comment-block{
   height: 100%;
   width: 40%;
   position: relative;
-  border: yellow 1px solid;
   display: flex;
   justify-content: center; /* Center icon horizontally */
   align-items: center; /* Center icon vertically */
 }
-/*.scroll-parent {*/
-/*  position: relative;*/
-/*  display: flex; !* Use flexbox to align children horizontally *!*/
-/*  width: 100%;*/
-/*  height: 30px; !* Adjust height as needed *!*/
-/*  overflow: hidden;*/
-/*}*/
 
-/*.scroll-element{*/
-/*  white-space: nowrap; !* Prevent text from wrapping *!*/
-/*  display: inline-block; !* Ensure elements stay on the same line *!*/
-/*}*/
-
-/*.scroll-element.primary{*/
-/*  width: 100%;*/
-/*  position: absolute;*/
-/*  animation: primary 3s linear infinite;*/
-/*}*/
-
-/*.scroll-element.secondary{*/
-/*  width: 100%;*/
-/*  position: absolute;*/
-/*  animation: secondary 3s linear infinite;*/
-/*}*/
-
-/*@keyframes primary {*/
-/*  from {*/
-/*    left: 0%;*/
-/*  }*/
-/*  to {*/
-/*    left: -100%;*/
-/*  }*/
-/*}*/
-/*@keyframes secondary {*/
-/*  from {*/
-/*    left: 100%;*/
-/*  }*/
-/*  to {*/
-/*    left: 0%;*/
-/*  }*/
-/*}*/
+@keyframes primary {
+  from {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  to {
+    transform: translateX(-100%); /* Move by the width of the content */
+  }
+}
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
 
 
 
