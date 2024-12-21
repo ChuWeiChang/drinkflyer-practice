@@ -33,7 +33,7 @@
 @media (min-width: 1000px) {
   .secondary-hero-banner-container{
     flex-direction: row;
-    margin: 2rem auto;
+    margin:  auto;
     height: 40rem;
   }
   .secondary-hero-banner{
