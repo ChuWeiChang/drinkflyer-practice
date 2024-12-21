@@ -1,1 +1,11 @@
-<p>secondary-hero-banner works!</p>
+<div class="secondary-hero-banner-container">
+  <div class="secondary-hero-banner">
+    <img class="responsive-banner" [ngSrc]="imgSrc" alt="secondary hero banner" priority fill >
+  </div>
+  <div class="functional-section">
+    <h1>{{'premium thc cocktails crafted for relaxation' | uppercase}}</h1>
+    <button class="secondary-hero-banner-btn">
+      {{ 'unwind with every sip' | uppercase }}
+    </button>
+  </div>
+</div>
