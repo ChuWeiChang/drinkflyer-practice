@@ -4,6 +4,8 @@
   width:100vw;
   height:auto;
   aspect-ratio: 905/1067;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 /* Styles for the responsive image */
