@@ -14,24 +14,25 @@
   box-sizing: border-box;
 }
 .scroll-element.primary, .scroll-element.secondary{
-  box-sizing: border-box;
-  padding-left: 1rem;
 }
 .scroll-element.primary{
-  animation: primary 10s linear infinite;
+  animation: primary 30s linear infinite;
   /*border: red 1px solid;*/
 }
 .scroll-element.secondary{
-  animation: secondary 10s linear infinite;
+  animation: secondary 30s linear infinite;
   /*border: yellow 1px solid;*/
 }
 app-user-comment-block{
+  box-sizing: border-box;
+  margin: 0 1rem;
   display: block;
   flex-shrink: 0;
   position: relative;
   width: 70vw;
   height: 100%;
-  /*border: green 1px solid;*/
+  border: gold 1px solid;
+  border-radius: 10px;
 
 }
 .ctrl-btn{
@@ -39,14 +40,15 @@ app-user-comment-block{
   bottom: 0;
   right: 5%;
   height: 20%;
-  width: 6rem;
+  width: 7rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .ctrl-btn button{
   font-size: 2rem;
-  height: 100%;
-  width: 40%;
+  aspect-ratio: 1;
+  width: 3rem;
   position: relative;
   display: flex;
   justify-content: center; /* Center icon horizontally */
