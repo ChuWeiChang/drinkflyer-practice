@@ -1,6 +1,6 @@
 .secondary-hero-banner-container{
   position: relative;
-  aspect-ratio: 1;
+  height: 50rem;
   width: 95vw;
   margin: 1rem auto;
   display: flex;
