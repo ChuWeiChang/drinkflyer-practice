@@ -101,3 +101,7 @@
   opacity: 1;
   visibility: visible;
 }
+
+.hidden {
+  display: none;
+}

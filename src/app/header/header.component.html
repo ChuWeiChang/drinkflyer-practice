@@ -1,5 +1,5 @@
 <div class="header-container" >
-  <div class="header-panel" *ngIf="!isSearch">
+  <div class="header-panel" [class.hidden]="isSearch">
     <app-header-leftbar></app-header-leftbar>
     <div class="logo-container ">
       <img ngSrc="assets/images/header/Flyers_Logotype_Stacked_2color_ondark.png" width="200" height="70" alt="Logo" class="logo">

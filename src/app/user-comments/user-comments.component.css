@@ -1,0 +1,90 @@
+.user-comments-container{
+  position: relative;
+  display: flex;
+  height: 25rem;
+  overflow: hidden;
+  /*border: 1px tan solid;*/
+}
+.user-comments-container:hover .scroll-element{
+  animation-play-state: paused;
+}
+.scroll-element{
+  display: flex;
+  position: absolute;
+  height: 60%;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.scroll-element.primary{
+  animation: primary 30s linear infinite;
+  /*border: red 1px solid;*/
+}
+.scroll-element.secondary{
+  animation: secondary 30s linear infinite;
+  /*border: yellow 1px solid;*/
+}
+app-user-comment-block{
+  box-sizing: border-box;
+  margin: 0 1rem;
+  display: block;
+  flex-shrink: 0;
+  position: relative;
+  width: 70vw;
+  height: 100%;
+  border: gold 1px solid;
+  border-radius: 10px;
+
+}
+@media (min-width: 990px) {
+  app-user-comment-block {
+    width: 40vw;
+  }
+}
+.ctrl-btn{
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  height: 20%;
+  width: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ctrl-btn button{
+  font-size: 2rem;
+  aspect-ratio: 1;
+  width: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+}
+
+@keyframes primary {
+  from {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  to {
+    transform: translateX(-100%); /* Move by the width of the content */
+  }
+}
+@keyframes secondary {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+p{
+  display: inline-block; /* Keep the <p> elements inline */
+  color: white;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+.secondary p{
+  color: yellow;
+}
