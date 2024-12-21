@@ -2,7 +2,7 @@
   <svg class="theme-icon" (click)="toggleSidebar()"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
 </div>
 
-<div *ngIf="showBackdrop" class="backdrop" (click)="toggleSidebar()"></div>
+<div class="backdrop" [ngClass]="{'open': showBackdrop}" (click)="toggleSidebar()"></div>
 <div class="left-bar-panel" [ngClass]="{'open': isOpen, 'animation':animation}">
 
   <svg class="theme-icon close-btn" id="left-bar-btn" (click)="toggleSidebar()">
