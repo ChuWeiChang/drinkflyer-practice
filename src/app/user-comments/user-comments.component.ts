@@ -11,9 +11,11 @@ import {UserCommentBlockComponent} from '../user-comment-block/user-comment-bloc
 })
 export class UserCommentsComponent {
   commentBlocks = [
-    {user:"Gwen A.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
-    {user:"Gwen B.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
-    {user:"Gwen C.", comment:"asssssssssssssssssssasssssssssssssasssssss"},
-    {user:"Gwen D .", comment:"asssssssssssssssssssasssssssssssssasssssss"},
+    {user:"Gwen B.", comment:"“I love the relaxed feeling and lack of a morning headache.”"},
+    {user:"Melissa A.", comment:"“The best cocktail for my partner and I to take the edge off.”"},
+    {user:"Matt K.", comment:"“The perfect blend of flavor and relaxation.”"},
+    {user:"Megan K.", comment:"“Such a nice treat to wind down with after a long, hectic day.”"},
+    {user:"Nesha K.", comment:"“I feel both relaxed and in control when sipping one.”"},
+    {user:"Chelsea B.", comment:"“Refreshing and the perfect go-to for after work or out on the town.”"},
   ]
 }
