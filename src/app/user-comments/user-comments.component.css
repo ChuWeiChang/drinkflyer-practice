@@ -36,6 +36,11 @@ app-user-comment-block{
   border-radius: 10px;
 
 }
+@media (min-width: 990px) {
+  app-user-comment-block {
+    width: 40vw;
+  }
+}
 .ctrl-btn{
   position: absolute;
   bottom: 0;
