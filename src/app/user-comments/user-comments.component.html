@@ -23,12 +23,15 @@
       </app-user-comment-block>
     }
   </div>
-<!--  <div class="scroll-element secondary">-->
-<!--    @for(comment of commentBlocks; track comment.user){-->
-<!--      <app-user-comment-block>-->
-<!--      </app-user-comment-block>-->
-<!--    }-->
-<!--  </div>-->
+  <div class="scroll-element secondary">
+    @for(comment of commentBlocks; track comment.user){
+      <app-user-comment-block
+        [comment]="comment.comment"
+        [user]="comment.user"
+      >
+      </app-user-comment-block>
+    }
+  </div>
   <div class="ctrl-btn">
     <button class="btn btn-secondary" aria-label="Previous slide">
       <i class="fas fa-arrow-left"></i>
