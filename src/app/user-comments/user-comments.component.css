@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   width: 100vw;
-  height: 35vh;
+  height: 50vh;
   overflow: hidden;
   border: 1px tan solid;
 
@@ -11,7 +11,7 @@
   display: flex;
   position: absolute;
   width: 100vw;
-  height: 70%;
+  height: 60%;
   gap:10%
 }
 .scroll-element.primary, .scroll-element.secondary{
@@ -27,6 +27,26 @@ app-user-comment-block{
   width: 70%;
   height: 100%;
   border: red 1px solid;
+}
+.ctrl-btn{
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  height: 20%;
+  width: 6rem;
+  border: yellow 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+.ctrl-btn button{
+  font-size: 2rem;
+  height: 100%;
+  width: 40%;
+  position: relative;
+  border: yellow 1px solid;
+  display: flex;
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
 }
 /*.scroll-parent {*/
 /*  position: relative;*/
