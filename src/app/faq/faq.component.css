@@ -53,7 +53,7 @@
 
 .spread {
   margin:  0.5rem 0.5rem 1rem 0.5rem;
-  max-height: 60rem; /* Allow content to be fully shown */
+  max-height: 100rem; /* Allow content to be fully shown */
 }
 
 
