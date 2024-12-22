@@ -14,13 +14,14 @@
 .faq {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items at the top */
+  align-items: flex-start;
   width: 100%;
-  height: 100%;
+
   cursor: pointer;
   border-radius: 8px;
   padding: 0.8rem 1rem;
   border: 1px solid sandybrown;
+  height: auto;
 }
 
 .title-section{
@@ -37,17 +38,14 @@
   .faq-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures proper distribution */
+    justify-content: space-between;
   }
   .accordions {
-    width: calc(50% - 1rem); /* Adjusted for 2 items per row and gap */
-    margin:  1rem 0; /* Avoid extra space beyond gap */
+    width: calc(50% - 1rem);
+    margin: 1rem 0;
+
   }
 }
-
-
-
-
 
 .faq-title {
   text-align: left;
@@ -72,7 +70,7 @@
   font-family: 'Mohave', serif;
   font-size: 1rem;
   margin:  0.5rem 0.5rem 1rem 0.5rem;
-  max-height: 100rem; /* Allow content to be fully shown */
+  max-height: 100rem;
 }
 
 
