@@ -27,6 +27,18 @@
 }
 .footer-content-section{
   height: 70%;
+  .content-link-list{
+    height: 40%;
+    border: green 1px solid;
+  }
+  .subscribe-section{
+    height: 30%;
+    border: green 1px solid;
+  }
+  .social-medias-section{
+    height: 30%;
+    border: green 1px solid;
+  }
 }
 
 .footer-partner-section{
