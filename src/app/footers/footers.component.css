@@ -7,19 +7,16 @@
   margin: 0 auto;
 }
 
-.footer-container > * {
-  /* Styles for immediate children of .footer-container */
-  border: darkgoldenrod 1px solid;
-}
 
 .footer-logo-section{
   position: relative;
-  height: 10%; /* This can be adjusted if needed */
+  height: 90px; /* This can be adjusted if needed */
   width: 90px;
   padding: 0; /* Ensure no padding is affecting layout */
   margin: 0 auto;
   display: inline-block;
   img{
+    height: 5rem;
     object-fit: contain;
     cursor: pointer;
   }
@@ -133,6 +130,16 @@
   }
 }
 @media (min-width: 990px) {
+  .footer-container{
+    border: 1px red solid;
+    height: 35rem;
+  }
+  .footer-content-section{
+    border: 1px wheat solid;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
   .footer-partner-section {
     align-items: center;
     ul {
