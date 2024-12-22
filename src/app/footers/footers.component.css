@@ -116,8 +116,13 @@
     gap: 1rem;
     flex-wrap: wrap;
     font-size: 1.8rem;
-    padding: 0; /* Optional, to remove any extra padding */
-    margin: 0;  /* Optional, to remove any extra margin */
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 774px) {
+    ul {
+      align-self: flex-end;
+    }
   }
   p {
     font-size: 0.9rem;
@@ -127,7 +132,16 @@
     }
   }
 }
-
+@media (min-width: 990px) {
+  .footer-partner-section {
+    align-items: center;
+    ul {
+      align-self: auto;
+    }
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 a{
   text-decoration: none;
   color: antiquewhite;
