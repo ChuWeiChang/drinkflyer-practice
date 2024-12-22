@@ -54,7 +54,7 @@
     justify-content: space-between;
     input{
       position: relative;
-      top:15%;
+      top:10%;
       height: 3rem;
       border-radius: 5px;
       color:white;
@@ -65,13 +65,16 @@
       font-size: 1rem;
     }
     button{
-      height: 3rem;
+      height: 3.3rem;
       width: 100%;
       color: antiquewhite;
     }
     button:hover{
       transition: transform 0.2s ease;
       transform: translateY(5px);
+    }
+    h2{
+      font-size: 2rem;
     }
   }
   .social-medias-section{
@@ -135,6 +138,7 @@
     height: 35rem;
   }
   .footer-content-section{
+    margin-top: 1rem;
     border: 1px wheat solid;
     height: 70%;
     display: flex;
@@ -149,6 +153,16 @@
     }
     .subscribe-section{
       flex:1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      input{
+        top:0;
+        width: 50%;
+      }
+      button{
+        width: 40%;
+      }
     }
     .social-medias-section{
       flex:1;
