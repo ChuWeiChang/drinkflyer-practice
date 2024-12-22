@@ -1,1 +1,18 @@
-<p>faq works!</p>
+<div class="faq-container">
+  @for(faq of accordions; track faq.id){
+    <div class="accordions">
+      <button class="faq" (click)="toggleAccordion(faq.id)">
+        <div class="title-section">
+          <h2 class="faq-title">
+            {{faq.title | uppercase}}
+          </h2>
+          <i class="fas fa-chevron-down" [ngClass]="{'rotate-icon': faq.isActive}"></i>
+        </div>
+        <p class="faq-context" [ngClass]="{'spread': faq.isActive}">
+          {{faq.context}}
+        </p>
+      </button>
+    </div>
+  }
+</div>
+
