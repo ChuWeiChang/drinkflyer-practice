@@ -98,9 +98,10 @@
       }
     }
     h5{
+      font-family: 'Mohave', monospace;
       align-self: flex-end;
       margin: auto 0;
-      font-size: 0.9rem!important;
+      font-size: 1rem!important;
     }
   }
 }
@@ -134,12 +135,10 @@
 }
 @media (min-width: 990px) {
   .footer-container{
-    border: 1px red solid;
     height: 35rem;
   }
   .footer-content-section{
     margin-top: 1rem;
-    border: 1px wheat solid;
     height: 70%;
     display: flex;
     justify-content: space-between;
@@ -165,6 +164,9 @@
       }
     }
     .social-medias-section{
+      .social-medias{
+        justify-content: flex-end;
+      }
       flex:1;
     }
   }
