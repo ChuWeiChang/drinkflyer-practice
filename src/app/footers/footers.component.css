@@ -3,9 +3,8 @@
   display: flex;
   flex-direction: column;
   height: 55rem;
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
-  border: red 1px solid;
 }
 
 .footer-container > * {
@@ -28,13 +27,37 @@
 .footer-content-section{
   height: 70%;
   .content-link-list{
+    box-sizing: border-box;
+    padding-top: 1rem;
     height: 35%;
-    border: green 1px solid;
+
     display: flex;
   }
   .subscribe-section{
     height: 35%;
-    border: green 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    input{
+      position: relative;
+      top:15%;
+      height: 3rem;
+      border-radius: 5px;
+      color:white;
+      background-color: black;
+      border-color: white;
+      cursor: pointer;
+      outline: none;
+      font-size: 1rem;
+    }
+    button{
+      height: 3rem;
+      width: 100%;
+    }
+    button:hover{
+      transition: transform 0.2s ease;
+      transform: translateY(5px);
+    }
   }
   .social-medias-section{
     height: 30%;
@@ -54,7 +77,6 @@ ul {
 }
 
 li {
-  margin-left: 1rem;
   margin-bottom: 1rem;
   text-align: left; /* Ensures text in <a> is left-aligned */
   list-style-type: none; /* Optional: Removes the default bullet points */
