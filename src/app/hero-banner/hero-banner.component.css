@@ -33,7 +33,7 @@
 }
 
 /*!* Style the button *!*/
-.banner-btn {
+.button-container{
   position: absolute;
   bottom: 10%;
   left: 50%;
