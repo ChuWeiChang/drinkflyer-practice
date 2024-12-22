@@ -28,11 +28,12 @@
 .footer-content-section{
   height: 70%;
   .content-link-list{
-    height: 40%;
+    height: 35%;
     border: green 1px solid;
+    display: flex;
   }
   .subscribe-section{
-    height: 30%;
+    height: 35%;
     border: green 1px solid;
   }
   .social-medias-section{
@@ -43,4 +44,27 @@
 
 .footer-partner-section{
   height: 20%;
+}
+ul {
+  display: flex; /* This makes the <ul> a flex container */
+  flex:1;
+  flex-direction: column; /* Aligns <li> items vertically (column direction) */
+  padding: 0; /* Optional: Remove default padding from <ul> */
+  margin: 0; /* Optional: Remove default margin from <ul> */
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: left; /* Ensures text in <a> is left-aligned */
+  list-style-type: none; /* Optional: Removes the default bullet points */
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: darkgoldenrod;
+  cursor: pointer;
 }
