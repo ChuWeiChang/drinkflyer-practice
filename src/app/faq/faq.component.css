@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
 }
 
 .accordions {
@@ -21,6 +22,7 @@
   padding: 0.8rem 1rem;
   border: 1px solid sandybrown;
 }
+
 .title-section{
   padding: 0;
   margin: 0;
@@ -30,6 +32,21 @@
   align-items: center;
   font-size: 0.7rem;
 }
+
+@media (min-width: 990px) {
+  .faq-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures proper distribution */
+  }
+  .accordions {
+    width: calc(50% - 1rem); /* Adjusted for 2 items per row and gap */
+    margin:  1rem 0; /* Avoid extra space beyond gap */
+  }
+}
+
+
+
 
 
 .faq-title {
@@ -52,6 +69,8 @@
 }
 
 .spread {
+  font-family: 'Mohave', serif;
+  font-size: 1rem;
   margin:  0.5rem 0.5rem 1rem 0.5rem;
   max-height: 100rem; /* Allow content to be fully shown */
 }
