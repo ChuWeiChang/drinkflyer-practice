@@ -85,7 +85,6 @@
     .social-medias{
       position: relative;
       display: flex;
-      border: 1px red solid;
       gap: 1rem;
       padding: 0;
       .tiktok{
@@ -109,11 +108,13 @@
 .footer-partner-section{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   height: 20%;
   ul {
     list-style-type: none;
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
     font-size: 1.8rem;
     padding: 0; /* Optional, to remove any extra padding */
     margin: 0;  /* Optional, to remove any extra margin */
