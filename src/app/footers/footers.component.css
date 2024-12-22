@@ -7,16 +7,28 @@
   margin: 0 auto;
   border: red 1px solid;
 }
+
 .footer-container > * {
   /* Styles for immediate children of .footer-container */
   border: darkgoldenrod 1px solid;
 }
+
 .footer-logo-section{
-  height: 10%;
+  position: relative;
+  height: 10%; /* This can be adjusted if needed */
+  width: 90px;
+  padding: 0; /* Ensure no padding is affecting layout */
+  margin: 0 auto;
+  display: inline-block;
+  img{
+    object-fit: contain;
+    cursor: pointer;
+  }
 }
 .footer-content-section{
   height: 70%;
 }
+
 .footer-partner-section{
   height: 20%;
 }
