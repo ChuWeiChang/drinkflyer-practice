@@ -1,6 +1,7 @@
 button {
   cursor: pointer;
-  background-color: saddlebrown;
+  background-color: darkgoldenrod;
+  border-radius: 5px;
   border:none;
   padding: 1rem 1rem;
   width: 10rem;
