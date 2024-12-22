@@ -53,6 +53,7 @@
     button{
       height: 3rem;
       width: 100%;
+      color: antiquewhite;
     }
     button:hover{
       transition: transform 0.2s ease;
