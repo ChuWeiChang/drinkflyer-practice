@@ -139,6 +139,20 @@
     height: 70%;
     display: flex;
     justify-content: space-between;
+    .content-link-list{
+      flex:1;
+      height: 100%;
+      ul{
+        padding-right: 1rem;
+        text-align: center;
+      }
+    }
+    .subscribe-section{
+      flex:1;
+    }
+    .social-medias-section{
+      flex:1;
+    }
   }
   .footer-partner-section {
     align-items: center;
