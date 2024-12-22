@@ -41,6 +41,13 @@ img {
 .merchandise-stars i {
   color: gold;
 }
+.merchandise-comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0.2rem;
+}
 
 p{
   color: white; /* Sets the text color to white */
