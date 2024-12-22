@@ -1,0 +1,185 @@
+.footer-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 55rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+
+.footer-logo-section{
+  position: relative;
+  height: 90px; /* This can be adjusted if needed */
+  width: 90px;
+  padding: 0; /* Ensure no padding is affecting layout */
+  margin: 0 auto;
+  display: inline-block;
+  img{
+    height: 5rem;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}
+.footer-content-section{
+  height: 70%;
+  .content-link-list{
+    box-sizing: border-box;
+    padding-top: 1rem;
+    height: 35%;
+
+    display: flex;
+    ul {
+      display: flex; /* This makes the <ul> a flex container */
+      flex:1;
+      flex-direction: column; /* Aligns <li> items vertically (column direction) */
+      padding: 0; /* Optional: Remove default padding from <ul> */
+      margin: 0; /* Optional: Remove default margin from <ul> */
+    }
+
+    li {
+      margin-bottom: 1rem;
+      text-align: left; /* Ensures text in <a> is left-aligned */
+      list-style-type: none; /* Optional: Removes the default bullet points */
+    }
+    a.color-change-hover:hover{
+      color: darkgoldenrod;
+      cursor: pointer;
+    }
+  }
+  .subscribe-section{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    input{
+      position: relative;
+      top:10%;
+      height: 3rem;
+      border-radius: 5px;
+      color:white;
+      background-color: black;
+      border-color: white;
+      cursor: pointer;
+      outline: none;
+      font-size: 1rem;
+    }
+    button{
+      height: 3.3rem;
+      width: 100%;
+      color: antiquewhite;
+    }
+    button:hover{
+      transition: transform 0.2s ease;
+      transform: translateY(5px);
+    }
+    h2{
+      font-size: 2rem;
+    }
+  }
+  .social-medias-section{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .social-medias{
+      position: relative;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      .tiktok{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      .fab{
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+    h5{
+      font-family: 'Mohave', monospace;
+      align-self: flex-end;
+      margin: auto 0;
+      font-size: 1rem!important;
+    }
+  }
+}
+
+.footer-partner-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20%;
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 774px) {
+    ul {
+      align-self: flex-end;
+    }
+  }
+  p {
+    font-size: 0.9rem;
+    display: inline;
+    a{
+      padding-right: 0.5rem;
+    }
+  }
+}
+@media (min-width: 990px) {
+  .footer-container{
+    height: 35rem;
+  }
+  .footer-content-section{
+    margin-top: 1rem;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    .content-link-list{
+      flex:1;
+      height: 100%;
+      ul{
+        padding-right: 1rem;
+        text-align: center;
+      }
+    }
+    .subscribe-section{
+      flex:1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      input{
+        top:0;
+        width: 50%;
+      }
+      button{
+        width: 40%;
+      }
+    }
+    .social-medias-section{
+      .social-medias{
+        justify-content: flex-end;
+      }
+      flex:1;
+    }
+  }
+  .footer-partner-section {
+    align-items: center;
+    ul {
+      align-self: auto;
+    }
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+a{
+  text-decoration: none;
+  color: antiquewhite;
+}

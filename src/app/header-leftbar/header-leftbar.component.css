@@ -22,24 +22,6 @@
   left: 0;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 100;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-.backdrop.open {
-  opacity: 1; /* Fade in */
-  visibility: visible; /* Make clickable */
-}
-
 /* links */
 ul.links {
   font-size: 15px;
