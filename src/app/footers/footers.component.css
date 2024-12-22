@@ -1,0 +1,22 @@
+.footer-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 55rem;
+  width: 95vw;
+  margin: 0 auto;
+  border: red 1px solid;
+}
+.footer-container > * {
+  /* Styles for immediate children of .footer-container */
+  border: darkgoldenrod 1px solid;
+}
+.footer-logo-section{
+  height: 10%;
+}
+.footer-content-section{
+  height: 70%;
+}
+.footer-partner-section{
+  height: 20%;
+}
