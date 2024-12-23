@@ -1,6 +1,7 @@
 .merchandise-list-container{
   position: relative;
-  width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .merchandise-list.list{
@@ -9,9 +10,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 1rem; /* Optional spacing */
-  width: 100vw;
   box-sizing: border-box;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 @media (min-width: 960px) {
   .merchandise-list.list{
@@ -21,9 +21,10 @@
 }
 app-merchandise-item {
   box-sizing: border-box;
-  border: 1px solid gold;
+  border: 1px solid sandybrown;
   padding: 1rem;
   text-align: center;
+  border-radius: 5px;
 }
 .merchandise-list.title{
   text-align: center;

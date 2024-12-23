@@ -7,7 +7,7 @@
 }
 .merchandise-drink {
   position: relative;
-  width: 90%;  /* Sets the width of the container */
+  width: 90%;
   aspect-ratio: 420/500;
   box-sizing: border-box;
   padding: 10px;
