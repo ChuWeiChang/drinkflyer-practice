@@ -73,6 +73,12 @@ app-header-leftbar{
 
 @media (min-width: 768px) {
   .cart-panel {
+    right: -55%;
+    width: 55%;
+  }
+}
+@media (min-width: 990px) {
+  .cart-panel {
     right: -40%;
     width: 40%;
   }
