@@ -1,11 +1,12 @@
 .scrolling-container {
   height: 45px;
-  padding:0 9px;
+  padding:9px 0;
   overflow: hidden;
   width: auto;
   display: flex;
   align-items: center;
   background-color: black;
+  box-sizing: border-box;
 }
 .scrolling-container:hover{
   background-color: saddlebrown;
