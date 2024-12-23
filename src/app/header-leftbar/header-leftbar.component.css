@@ -24,37 +24,55 @@
 }
 
 /* links */
+
 ul.links {
-  font-size: 15px;
-  padding-left: 1rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 22.5px 0;
 }
 .links.account {
   display: flex; /* Align items in a row */
   flex-direction: column;
   gap: 0.5rem; /* Adds space between the links */
-  padding-left: 1rem;
-  margin-bottom: 1rem;
+  margin: 22.5px 0;
+  font-size: 18px;
 }
 .search-form {
   display: flex; /* Use flex to align input and svg */
   align-items: flex-start;
   position: relative;
-  padding-left: 2rem;
 }
 
 .search-form input {
+  height: 54px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 5px;
   padding-right: 2rem; /* Give space for the icon */
-  width: 80%; /* Make the input take up the available width */
+  width: 100%; /* Make the input take up the available width */
   z-index: 1;
 }
 
 .search-form .theme-icon.searching {
+  position: absolute;
+  right: 9px;
+  top: 30%;
   z-index: 2; /* Ensure the icon is above the input */
+}
+
+.search-form input::placeholder {
+  padding-left: 1rem;
+  margin: 0;
+  color: #F5EEE2;
+  font-family: monospace;
 }
 .social-medias{
   display: flex;
-  padding-left: 2rem;
-  gap: 1rem;
+  padding-top: 22.5px;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -82,11 +100,11 @@ ul.links {
   width: 22.5px;
   height: 22.5px;
   cursor: pointer;
+  margin-bottom: 22.5px;
 }
 
 #left-bar-btn{
-  padding-top: 20px;
-  padding-left: 20px;
+
 }
 
 
@@ -98,7 +116,8 @@ ul.links {
 
 ul {
   list-style-type: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 .links a{
   text-decoration: none;
