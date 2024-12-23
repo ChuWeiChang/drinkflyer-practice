@@ -37,7 +37,7 @@ img {
   display: flex;
   align-items: center;
   height: 100%;
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  font-size: 0.75rem;
 }
 .merchandise-stars i {
   color: gold;
