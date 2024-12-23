@@ -1,11 +1,18 @@
 .scrolling-container {
-  height: 45px;
-  padding:0 9px;
+  height: 36px;
+  padding:4.5px 0;
   overflow: hidden;
   width: auto;
   display: flex;
   align-items: center;
   background-color: black;
+  box-sizing: border-box;
+}
+@media (min-width: 990px) {
+  .scrolling-container {
+    height: 45px;
+    padding: 9px 0;
+  }
 }
 .scrolling-container:hover{
   background-color: saddlebrown;
@@ -48,14 +55,8 @@
   white-space: nowrap;
   padding-right: 1rem;
   font-size: 18px;
-  font-family: 'Arial', sans-serif;
 
   color: white;
-}
-.scrolling-text span{
-  font-family: "Barlow Condensed", serif;
-  font-weight: 100;
-  font-style: normal;
 }
 
 .square-icon {

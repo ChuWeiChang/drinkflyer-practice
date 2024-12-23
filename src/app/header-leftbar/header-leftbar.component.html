@@ -1,5 +1,7 @@
 <div class="left-bar">
-  <svg class="theme-icon" (click)="toggleSidebar()"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
+  <svg class="theme-icon" width="27" height="27" (click)="toggleSidebar()">
+    <use href="assets/icons/icons.svg#icon-menu"></use>
+  </svg>
 </div>
 
 <div class="backdrop" [ngClass]="{'open': showBackdrop}" (click)="toggleSidebar()"></div>
@@ -10,15 +12,15 @@
   </svg>
 
   <ul class="links">
-    <li><a href="#">SHOP ALL </a></li>
-    <li><a href="#">FAQ</a></li>
-    <li><a href="#">CONTACTS</a></li>
-    <li><a href="#">REVIEWS</a></li>
+    <li><a href="#"><span>SHOP ALL </span></a></li>
+    <li><a href="#"><span>FAQ</span></a></li>
+    <li><a href="#"><span>CONTACTS</span></a></li>
+    <li><a href="#"><span>REVIEWS</span></a></li>
   </ul>
 
   <div class="links account">
-    <a href="#">Log in</a>
-    <a href="#">Create account</a>
+    <a href="#"><span>Log in</span></a>
+    <a href="#"><span>Create account</span></a>
   </div>
   <form class="search-form">
     <input type="search" placeholder="Search">
