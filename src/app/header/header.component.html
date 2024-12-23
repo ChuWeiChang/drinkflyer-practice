@@ -17,18 +17,20 @@
     </div>
     <svg class="theme-icon" (click)="toggleSearch()"><use href="assets/icons/icons.svg#icon-close"></use></svg>
   </div>
+  <div class="cart-panel" [ngClass]="{'open': isCartOpen, 'animation':animation}">
+    <div class="cart-content">
+      <h4>Your Cart</h4>
+      <svg class="theme-icon close-btn" (click)="toggleCart()">
+        <use href="assets/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+    <div class="cart-items">
+      <p>Your cart is currently empty.</p>
+    </div>
+  </div>
+  <!-- Sliding Panel -->
+  <div class="backdrop" [ngClass]="{'open': showBackdrop}" (click)="toggleCart()"></div>
 </div>
 
-<!-- Sliding Panel -->
-<div class="backdrop" [ngClass]="{'open': showBackdrop}" (click)="toggleCart()"></div>
-<div class="cart-panel" [ngClass]="{'open': isCartOpen, 'animation':animation}">
-  <div class="cart-content">
-    <h4>Your Cart</h4>
-    <svg class="theme-icon close-btn" (click)="toggleCart()">
-      <use href="assets/icons/icons.svg#icon-close"></use>
-    </svg>
-  </div>
-  <div class="cart-items">
-    <p>Your cart is currently empty.</p>
-  </div>
-</div>
+
+
