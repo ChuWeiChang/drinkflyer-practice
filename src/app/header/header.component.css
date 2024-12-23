@@ -63,7 +63,19 @@ app-header-leftbar{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding:0 2rem;
+  height: 68px;
+  padding:22.5px;
+  .search-form{
+    display: flex;
+  }
+  input{
+    background: black;
+    border: none;
+  }
+  input::placeholder{
+    color: white;
+    font-size: 1rem;
+   }
 }
 
 /* cart panel*/
