@@ -1,7 +1,7 @@
 /* Ensure the container takes the full viewport */
 .banner-container {
   position: relative;
-  width:100vw;
+  width: 100%;
   height:auto;
   aspect-ratio: 905/1067;
   overflow: hidden;
