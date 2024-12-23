@@ -6,8 +6,8 @@
 .left-bar-panel {
   position: fixed;
   top: 0;
-  left: -80%;
-  width: 80%;
+  left: -90%;
+  width: 90%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
@@ -56,7 +56,7 @@ ul.links {
   gap: 1rem;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   ul.links {
     font-size: 20px;
     padding-left: 2rem;
@@ -64,6 +64,12 @@ ul.links {
   .links.account {
     padding-left: 2rem;
   }
+  .left-bar-panel {
+    left: -60%;
+    width: 60%;
+  }
+}
+@media (min-width: 990px) {
   .left-bar-panel {
     left: -40%;
     width: 40%;
