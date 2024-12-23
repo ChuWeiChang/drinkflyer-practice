@@ -1,6 +1,8 @@
 .product-feature-list-container{
   position: relative;
-  width: 100%;
+  width: 95vw;
+  display: flex;
+  margin: 0 auto;
 }
 
 .product-feature-list{
