@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, p, span{
   padding: 0;
   margin: 0;
   color: #F5EEE2;
+  font-family: "Barlow Condensed", serif;
 }
 .backdrop {
   position: fixed;
