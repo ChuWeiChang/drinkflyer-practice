@@ -1,7 +1,9 @@
 .scrolling-container {
+  height: 2rem;
   overflow: hidden;
   width: 100%;
   display: flex;
+  align-items: center;
   background-color: black;
 }
 .scrolling-container:hover{
@@ -10,27 +12,41 @@
 .scrolling-text-wrapper {
   display: flex;
   width: auto;
-  animation: scroll-left 30s linear infinite;
   cursor: pointer;
+  .primary{
+    animation: primary 5s linear infinite;
+  }
+  .secondary{
+    animation: secondary 5s linear infinite;
+  }
 }
 /* Define the scroll animation */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
+@keyframes primary {
+  from {
+    transform: translateX(0); /* Start at the initial position */
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(-100%); /* Move by the width of the content */
   }
 }
-.scrolling-text-wrapper:hover {
+@keyframes secondary {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.scrolling-text-wrapper:hover .primary,
+.scrolling-text-wrapper:hover .secondary {
   animation-play-state: paused;
 }
 
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
-  padding-right: 20px;
-  font-size: small;
+  padding-right: 1rem;
+  font-size: 1.1rem;
   font-family: 'Arial', sans-serif;
   color: white;
 }

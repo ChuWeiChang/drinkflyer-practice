@@ -1,6 +1,12 @@
 <div class="scrolling-container">
   <div class="scrolling-text-wrapper">
-    <div class="scrolling-text" *ngFor="let text of texts">
+    <div class="scrolling-text primary" *ngFor="let text of texts">
+      {{ text }}
+      <svg class="square-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+        <rect width="10" height="10" />
+      </svg>
+    </div>
+    <div class="scrolling-text secondary" *ngFor="let text of texts">
       {{ text }}
       <svg class="square-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
         <rect width="10" height="10" />
