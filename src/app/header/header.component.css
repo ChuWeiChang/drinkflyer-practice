@@ -37,12 +37,16 @@ app-header-leftbar{
   justify-content: flex-end;
 }
 .theme-icon{
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
   padding-right: 1rem;
+
 }
 
+.theme-icon.user{
+  visibility: hidden;
+}
 /*for search container*/
 
 .search-container {
@@ -72,6 +76,9 @@ app-header-leftbar{
 }
 
 @media (min-width: 768px) {
+  .theme-icon.user{
+    visibility: visible;
+  }
   .cart-panel {
     right: -55%;
     width: 55%;
