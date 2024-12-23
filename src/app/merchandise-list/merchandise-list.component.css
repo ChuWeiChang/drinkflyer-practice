@@ -13,7 +13,7 @@
   box-sizing: border-box;
   padding: 1rem;
 }
-@media (min-width: 60rem) {
+@media (min-width: 960px) {
   .merchandise-list.list{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);

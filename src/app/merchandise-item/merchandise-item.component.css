@@ -28,9 +28,10 @@ img {
   padding: 0; /* Remove padding, if any, that may affect the height */
 }
 .merchandise-rating {
-  height: 50px;
   display: flex;
-  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .merchandise-stars{
   display: flex;
