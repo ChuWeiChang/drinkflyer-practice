@@ -1,7 +1,8 @@
 .scrolling-container {
-  height: 2rem;
+  height: 45px;
+  padding:0 9px;
   overflow: hidden;
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   background-color: black;
@@ -46,9 +47,15 @@
   display: inline-block;
   white-space: nowrap;
   padding-right: 1rem;
-  font-size: 1.1rem;
+  font-size: 18px;
   font-family: 'Arial', sans-serif;
+
   color: white;
+}
+.scrolling-text span{
+  font-family: "Barlow Condensed", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .square-icon {
