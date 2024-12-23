@@ -70,10 +70,10 @@ app-header-leftbar{
 .cart-panel {
   position: fixed;
   top: 0;
-  right: -80%; /* Start off-screen on the right */
-  width: 80%; /* Takes up half the screen */
+  right: -90%;
+  width: 90%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background-color: black;
   color: white;
   z-index: 101;
 }
@@ -105,13 +105,16 @@ app-header-leftbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 22.5px 22.5px 11.25px 22.5px;
+  font-size: 1rem;
 }
 .cart-panel .cart-content .close-btn{
   height: 1.5rem;
-  margin: 1rem;
+  margin-right: 22.5px;
 }
 .cart-panel .cart-items {
+  height: 27px;
+  padding: 22.5px;
   display: flex;
   justify-content: center;
 }
