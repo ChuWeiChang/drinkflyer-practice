@@ -1,7 +1,7 @@
 .partner-container{
   position: relative;
   height: 30rem;
-  width: 100vw;
+  width: 100%;
 }
 .partner-list {
   display: flex;
