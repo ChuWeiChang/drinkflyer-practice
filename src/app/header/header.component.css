@@ -83,10 +83,11 @@ app-header-leftbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
+  padding: 1rem;
 }
 .cart-panel .cart-content .close-btn{
-  margin-right: 10px;
+  height: 1.5rem;
+  margin: 1rem;
 }
 .cart-panel .cart-items {
   display: flex;
