@@ -1,20 +1,25 @@
 .product-feature-list-container{
   position: relative;
-  width: 95vw;
-  display: flex;
+  width: 100%;
   margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 .product-feature-list{
   display: flex;
   flex-direction: column;
+  gap:3rem;
 }
 app-product-feature-list-item {
   flex: 1;
 }
 
 
-@media (min-width: 55rem) {
+@media (min-width: 990px) {
+  .product-feature-list-container{
+    padding: 2rem 3rem;
+  }
   .product-feature-list{
     flex-direction: row;
     justify-content: space-between;
