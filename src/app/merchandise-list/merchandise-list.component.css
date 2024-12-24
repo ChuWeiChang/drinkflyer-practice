@@ -1,7 +1,8 @@
 .merchandise-list-container{
   position: relative;
-  width: 95vw;
-  margin: 0 auto;
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  box-sizing: border-box;
 }
 
 .merchandise-list.list{
@@ -31,4 +32,9 @@ app-merchandise-item {
 }
 h1, h2{
   color: white;
+}
+.subtitle{
+  color: white;
+  margin: 0 auto;
+  width: 33.6rem;
 }
