@@ -1,6 +1,6 @@
 .faq-container {
   max-width: 95vw;
-  margin: 0 auto;
+  margin: 2.4rem auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
