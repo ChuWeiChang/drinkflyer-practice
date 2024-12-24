@@ -37,25 +37,33 @@ app-user-comment-block{
   border-radius: 10px;
 
 }
-@media (min-width: 990px) {
-  app-user-comment-block {
-    width: 40vw;
-  }
-}
+
 .ctrl-btn{
   position: absolute;
   bottom: 0;
-  right: 5%;
-  height: 20%;
-  width: 7rem;
+  right: 2%;
+  height: 2.7rem;
+  width: 6rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+@media (min-width: 990px) {
+  .user-comments-container{
+    height: 17rem;
+  }
+  app-user-comment-block {
+    width: 40vw;
+  }
+  .ctrl-btn{
+    right: 4.5%;
+  }
 }
 .ctrl-btn button{
-  font-size: 2rem;
-  aspect-ratio: 1;
-  width: 3rem;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  height: 2.7rem;
+  width: 2.7rem;
   position: relative;
   display: flex;
   justify-content: center; /* Center icon horizontally */
