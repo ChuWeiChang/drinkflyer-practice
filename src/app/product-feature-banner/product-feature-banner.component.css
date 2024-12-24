@@ -1,4 +1,4 @@
-.secondary-hero-banner-container {
+.product-feature-banner-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ img {
   object-fit: contain;
 }
 @media (min-width: 1000px) {
-  .secondary-hero-banner-container{
+  .product-feature-banner-container{
     flex-direction: row;
     box-sizing: border-box;
     padding: 0 3rem 0 3rem;
