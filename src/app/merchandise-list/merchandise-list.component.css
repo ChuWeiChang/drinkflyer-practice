@@ -1,7 +1,7 @@
 .merchandise-list-container{
   position: relative;
   width: 100%;
-  padding: 4.5rem 6rem;
+  padding: 2rem 1.5rem;
   box-sizing: border-box;
 }
 
@@ -10,14 +10,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 3rem;
+  gap: 1.5rem; /* Optional spacing */
   box-sizing: border-box;
   padding-top: 3rem;
 }
 @media (min-width: 960px) {
+  .merchandise-list-container{
+    padding: 4.5rem 3rem;
+  }
   .merchandise-list.list{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 3rem
   }
 }
 app-merchandise-item {
