@@ -34,10 +34,9 @@ app-merchandise-item {
 .merchandise-list.title{
   text-align: center;
 }
-h1, h2{
+p{
   margin: 1.5rem auto 0;
-  color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .subtitle{
   font-size: 1.2rem;
