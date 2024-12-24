@@ -1,7 +1,9 @@
 .partner-container{
   position: relative;
-  height: 30rem;
+  height: 27.3rem;
   width: 100%;
+  box-sizing: border-box;
+  padding: 1.2rem 1.5rem;
 }
 .partner-list {
   display: flex;
@@ -20,7 +22,7 @@
 img {
   object-fit: contain;
 }
-@media (min-width: 495px) {
+@media (min-width: 509px) {
   .image-wrapper {
     width: 50%;
   }
