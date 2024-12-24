@@ -1,16 +1,15 @@
 .secondary-hero-banner-container{
   position: relative;
   aspect-ratio: 1;
-  width: 95vw;
-  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 1.2rem 1.5rem;
   /*border: red 1px solid;*/
 }
 .secondary-hero-banner{
   position: relative;
-  height: 90%;
+  height: 100%;
   width: 100%;
   margin: 1rem 0;
 }
