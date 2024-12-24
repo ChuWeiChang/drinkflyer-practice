@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, p, span{
   margin: 0;
   color: #F5EEE2;
   font-family: monospace;
+  word-spacing: -5px;
 }
 .backdrop {
   position: fixed;
