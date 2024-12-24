@@ -14,6 +14,12 @@
   box-sizing: border-box;
   padding-top: 3rem;
 }
+p{
+  display: inline-block;
+  width: 100%;
+  margin: 1.5rem auto 0;
+  font-size: 2rem;
+}
 @media (min-width: 960px) {
   .merchandise-list-container{
     padding: 4.5rem 3rem;
@@ -22,6 +28,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 3rem
+  }
+  p{
+    font-size: 3rem;
   }
 }
 app-merchandise-item {
@@ -34,12 +43,7 @@ app-merchandise-item {
 .merchandise-list.title{
   text-align: center;
 }
-p{
-  display: inline-block;
-  width: 100%;
-  margin: 1.5rem auto 0;
-  font-size: 2rem;
-}
+
 .subtitle{
   font-size: 1.2rem;
   color: white;
