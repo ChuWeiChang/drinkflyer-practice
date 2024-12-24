@@ -35,8 +35,10 @@ app-merchandise-item {
   text-align: center;
 }
 p{
+  display: inline-block;
+  width: 100%;
   margin: 1.5rem auto 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .subtitle{
   font-size: 1.2rem;
