@@ -40,6 +40,7 @@ img {
   font-size: 0.75rem;
 }
 .merchandise-stars i {
+  font-size: 1.25rem;
   color: gold;
 }
 .merchandise-comments {
@@ -49,8 +50,14 @@ img {
   text-align: center;
   margin-left: 0.2rem;
 }
-
+.merchandise-price{
+  margin-top: 0.5rem;
+}
 p{
-  color: white; /* Sets the text color to white */
+  font-size: 18px;
+}
+.reviews{
+  font-size: 0.7rem;
+  margin: 0.2rem auto;
 }
 
