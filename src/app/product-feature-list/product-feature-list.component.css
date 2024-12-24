@@ -1,16 +1,15 @@
 .product-feature-list-container{
   position: relative;
   width: 100%;
-  display: flex;
   margin: 0 auto;
   padding: 1.5rem;
-  gap:1.5rem;
   box-sizing: border-box;
 }
 
 .product-feature-list{
   display: flex;
   flex-direction: column;
+  gap:3rem;
 }
 app-product-feature-list-item {
   flex: 1;
