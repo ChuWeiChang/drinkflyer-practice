@@ -1,5 +1,4 @@
 .secondary-hero-banner-container{
-  position: relative;
   aspect-ratio: 1;
   display: flex;
   flex-direction: column;
@@ -35,17 +34,24 @@
   width: 13.1rem;
   font-weight: bold;
 }
+img{
+  object-fit: cover;
+  border-radius: 5px;
+}
 @media (min-width: 990px) {
   .secondary-hero-banner-container{
+    aspect-ratio: auto;
     flex-direction: row;
-    align-items: flex-start;
-    margin:  auto;
-    height: 40rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 3rem 1.5rem 3rem;
+    gap: 3rem;
   }
   .secondary-hero-banner{
     margin: 0;
+    aspect-ratio: 1;
     width: 50%;
-    /*border: red 1px solid;*/
+
   }
   .functional-section{
     display: flex;
@@ -64,12 +70,12 @@
     text-align: center;
     color: white;
   }
+  img{
+    object-fit: contain;
+  }
 }
 
-img{
-  object-fit: cover;
-  border-radius: 5px;
-}
+
 /*.secondary-hero-banner-container{*/
 /*  position: relative;*/
 /*  height: 25rem;*/
