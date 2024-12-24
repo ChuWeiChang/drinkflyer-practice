@@ -40,3 +40,6 @@
   transform: translateX(-50%);
   z-index: 1; /* Ensure it's on top of the image */
 }
+span{
+  color:black;
+}
