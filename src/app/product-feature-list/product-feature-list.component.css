@@ -17,6 +17,9 @@ app-product-feature-list-item {
 
 
 @media (min-width: 990px) {
+  .product-feature-list-container{
+    padding: 2rem 3rem;
+  }
   .product-feature-list{
     flex-direction: row;
     justify-content: space-between;
