@@ -4,8 +4,8 @@
   </div>
   <div class="partner-list list">
     @for (item of items; track item.id){
-      <div class="image-wrapper">
-        <img [ngSrc]="dir_path + item.filename" alt="item.id" fill>
+      <div class="image-wrapper" [id]="item.id">
+        <img [ngSrc]="dir_path + item.filename" [alt]="item.id" fill>
       </div>
     }
   </div>

@@ -1,6 +1,6 @@
 .partner-container{
   position: relative;
-  height: 27.3rem;
+
   width: 100%;
   box-sizing: border-box;
   padding: 1.2rem 1.5rem;
@@ -9,49 +9,36 @@
   display: flex;
   position: relative;
   justify-content: center;
-  align-content: space-around;
+  align-items: center;
+  align-content: flex-start;
   height: 80%;
   width: 100%;
   flex-wrap: wrap;
 }
 .image-wrapper{
   position: relative;
-  height: 15%;
   width: 12rem;
   margin: 1.2rem 1.5rem 0;
+}
+.image-wrapper#RollingStones{
+  height: 39px;
+}
+.image-wrapper#Forbes{
+  height: 65px;
+}
+.image-wrapper#InsideHook{
+  height: 39px;
+}
+.image-wrapper#Bloomberg{
+  height: 42px;
+}
+.image-wrapper#Gotham{
+  height: 61px;
 }
 img {
   object-fit: contain;
 }
-/*@media (min-width: 509px) {*/
-/*  .image-wrapper {*/
-/*    width: 50%;*/
-/*  }*/
-/*}*/
-/*@media (min-width: 720px) {*/
-/*  .partner-container{*/
-/*    height: 20rem;*/
-/*  }*/
-/*  .partner-list {*/
-/*    height: 80%;*/
-/*  }*/
-/*  .image-wrapper {*/
-/*    height: 30%;*/
-/*    width: 30%;*/
-/*  }*/
 
-/*}*/
-/*@media (min-width: 944px) {*/
-/*  .image-wrapper {*/
-/*    width: 23%;*/
-/*  }*/
-/*}*/
-/*@media (min-width: 990px) {*/
-/*  .image-wrapper {*/
-/*    height: 40%;*/
-/*    width: 18%;*/
-/*  }*/
-/*}*/
 h1{
   position: relative;
   font-size: 2rem;
@@ -60,3 +47,20 @@ h1{
   padding: 0;
   margin: 0;
 }
+@media (min-width: 990px) {
+  .partner-container{
+    padding: 3rem 3rem;
+  }
+  h1{
+    position: relative;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  .image-wrapper{
+    margin: 2rem ;
+  }
+}
+
