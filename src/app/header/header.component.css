@@ -25,15 +25,18 @@
   width: 100%;
 }
 .logo-container {
+  position: relative;
   flex: 1;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  padding:0.75rem 0;
-  max-height: 68px;
-  max-width: 240px;
+  margin:0.75rem 0;
+  height: 100%;
+  box-sizing: border-box;
 }
 .logo{
+  height: 68px;
+  width: 240px;
   object-fit: contain;
 }
 app-header-leftbar{
@@ -120,6 +123,9 @@ app-header-leftbar{
   }
 }
 @media (min-width: 990px) {
+  .logo-container{
+    height: 4.5rem;
+  }
   .theme-icon.user{
     visibility: visible;
   }
