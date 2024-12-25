@@ -1,7 +1,5 @@
 .left-bar{
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
 .left-bar-panel {
@@ -103,7 +101,6 @@ ul.links {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
-  margin-bottom: 1.5rem;
 }
 
 .tiktok{
