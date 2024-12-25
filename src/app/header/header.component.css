@@ -5,15 +5,15 @@
   background-color: black;
   justify-content: space-between;
   width: 100%;
-  max-height: 90.5px;
-  padding: 9px 22.5px;
+  max-height: 6rem;
+  padding: 0.6rem 1.5rem;
   line-height: 1.5rem;
   z-index: 3;
   box-sizing: border-box;
 }
 @media (min-width: 990px) {
   .header-container {
-    padding: 0 45px;
+    padding: 0 3rem;
   }
 }
 .header-panel {
@@ -29,7 +29,7 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  padding:11.25px 0;
+  padding:0.75rem 0;
 }
 .logo{
   /*aspect-ratio: 742 / 211;*/
@@ -63,8 +63,8 @@ app-header-leftbar{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 68px;
-  padding:22.5px;
+  height: 4.5rem;
+  padding:1.5rem;
   .search-form{
     display: flex;
   }
@@ -101,16 +101,16 @@ app-header-leftbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22.5px 22.5px 11.25px 22.5px;
+  padding: 1.5rem 1.5rem 0.75rem 1.5rem;
   font-size: 1.5rem;
 }
 .cart-panel .cart-content .close-btn{
   height: 1.5rem;
-  margin-right: 22.5px;
+  margin-right: 1.5rem;
 }
 .cart-panel .cart-items {
   height: 27px;
-  padding: 22.5px;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
 }
@@ -130,11 +130,11 @@ app-header-leftbar{
     width: 40%;
   }
   .cart-panel .cart-content {
-    padding: 25px 45px 25px 45px;
+    padding: 1.6rem 3rem 1.6rem 3rem;
     font-size: 1.5rem;
     .close-btn{
       height: 1.5rem;
-      margin-right: 60px;
+      margin-right: 4rem;
     }
   }
 }
