@@ -5,9 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   row-gap: 1.5rem;
-
 }
-
 
 .faq {
   display: flex;
@@ -19,7 +17,6 @@
   border-radius: 8px;
   border: 1px solid rgb(205, 158, 83);
   height: auto;
-  /*margin-bottom: 1rem;*/
 }
 
 .title-section{
@@ -43,7 +40,6 @@
   }
   .accordions {
     width: calc(50% - 1.5rem);
-    /*margin: 1rem 0;*/
   }
 }
 
@@ -74,15 +70,15 @@
   max-height: 100rem;
 }
 
-
 .rotate-icon {
   transform: rotate(180deg); /* Rotate icon when active */
   transition: transform 0.3s ease;
 }
+
 button{
   background-color: transparent;
 }
 button:hover {
-  transform: none; /* Lifts the button upwards */
+  transform: none; /* cancel upwards animation*/
 }
 

@@ -10,13 +10,15 @@
       <svg class="theme-icon" (click)="toggleCart()"><use href="assets/icons/icons.svg#icon-cart"></use></svg>
     </div>
   </div>
-  <div class="search-container" *ngIf="isSearch" >
-    <div class="search-form">
-      <svg class="theme-icon searching"><use href="assets/icons/icons.svg#icon-search"></use></svg>
-      <input type="text" class="search-input" placeholder="Search..." >
+  @if (isSearch){
+    <div class="search-container">
+      <div class="search-form">
+        <svg class="theme-icon searching"><use href="assets/icons/icons.svg#icon-search"></use></svg>
+        <input type="text" class="search-input" placeholder="Search..." >
+      </div>
+      <svg class="theme-icon" (click)="toggleSearch()"><use href="assets/icons/icons.svg#icon-close"></use></svg>
     </div>
-    <svg class="theme-icon" (click)="toggleSearch()"><use href="assets/icons/icons.svg#icon-close"></use></svg>
-  </div>
+  }
   <div class="cart-panel" [ngClass]="{'open': isCartOpen, 'animation':animation}">
     <div class="cart-content">
       <h4>Your Cart</h4>

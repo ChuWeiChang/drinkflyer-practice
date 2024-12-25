@@ -1,29 +1,29 @@
-import { Component } from '@angular/core';
-import {NgClass, NgIf, NgOptimizedImage} from '@angular/common';
+import {Component, OnInit} from '@angular/core';
+import {NgClass, NgOptimizedImage} from '@angular/common';
 import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component';
-import {BackdropService} from '../backdrop.service';
+import { BackdropModule } from '../backdrop/backdrop.module';
 
 @Component({
   selector: 'app-header',
   imports: [
     NgOptimizedImage,
     HeaderLeftbarComponent,
-    NgIf,
-    NgClass
+    NgClass,
+    BackdropModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
-  providers: [BackdropService],
+  providers: [BackdropModule],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
   isCartOpen: boolean = false;
   animation: boolean = false;
   isSearch: boolean = false;
   showBackdrop: boolean = false;
-  constructor(private backdropService: BackdropService) {}
+  constructor(private backdropModule: BackdropModule) {}
 
   ngOnInit() {
-    this.backdropService.backdropState.subscribe((state) => {
+    this.backdropModule.backdropState.subscribe((state) => {
       this.showBackdrop = state;
     });
   }
@@ -37,9 +37,9 @@ export class HeaderComponent {
     this.isCartOpen = !this.isCartOpen;
     if (this.isCartOpen){
       this.animation = !this.animation;
-      this.backdropService.openBackdrop();
+      this.backdropModule.openBackdrop();
     } else{
-      this.backdropService.closeBackdrop();
+      this.backdropModule.closeBackdrop();
       setTimeout(() => {this.animation = !this.animation;}, 500); // 2000 milliseconds = 2 seconds
     }
   }

@@ -1,17 +1,20 @@
 <div class="scrolling-container">
   <div class="scrolling-text-wrapper">
-    <div class="scrolling-text primary" *ngFor="let text of texts">
-      <span>{{ text }}</span>
-      <svg class="square-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-        <rect width="20" height="20" />
-      </svg>
-    </div>
-    <div class="scrolling-text secondary" *ngFor="let text of texts">
-      <span>{{ text }}</span>
-      <svg class="square-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="80" height="80">
-        <rect width="40" height="40" />
-      </svg>
-
-    </div>
+    @for (text of texts; track text.id){
+      <div class="scrolling-text primary">
+        <span>{{ text.string }}</span>
+        <svg class="square-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <rect width="20" height="20" />
+        </svg>
+      </div>
+    }
+    @for (text of texts; track text.id){
+      <div class="scrolling-text secondary">
+        <span>{{ text.string }}</span>
+        <svg class="square-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="80" height="80">
+          <rect width="40" height="40" />
+        </svg>
+      </div>
+    }
   </div>
 </div>
