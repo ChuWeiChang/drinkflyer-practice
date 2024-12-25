@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgClass} from '@angular/common';
 import {BackdropModule} from '../backdrop/backdrop.module';
 @Component({
@@ -11,7 +11,7 @@ import {BackdropModule} from '../backdrop/backdrop.module';
   styleUrl: './header-leftbar.component.css',
   providers: [BackdropModule],
 })
-export class HeaderLeftbarComponent {
+export class HeaderLeftbarComponent implements OnInit {
   isOpen: boolean = false;
   animation: boolean = false;
   showBackdrop: boolean = false;
