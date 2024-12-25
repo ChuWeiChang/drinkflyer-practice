@@ -1,12 +1,8 @@
 <div class="banner-container">
   <div class="image-and-sticker">
-    @if(windowSizeConfirmed){
-      <img class="responsive-banner" [ngSrc]="imgSrc" alt="hero banner" priority fill >
-    }
-    @if(displaySticker){
-      <img class="sticker" ngSrc="assets/images/hero-banner/HolidayGlasses_sticker.png" width="460" height="583" alt="hero banner">
-    }
-
+    <img class="responsive-banner" id="big" [ngSrc]="imgSrcBig" alt="hero banner" priority fill >
+    <img class="responsive-banner" id="small" [ngSrc]="imgSrcSmall" alt="hero banner" priority fill >
+    <img class="sticker" ngSrc="assets/images/hero-banner/HolidayGlasses_sticker.png" width="460" height="583" alt="hero banner" priority>
   </div>
   <div class="button-container">
     <button class="banner-btn"><span>SHOP NOW</span></button>

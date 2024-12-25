@@ -1,5 +1,7 @@
 .left-bar{
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .left-bar-panel {
@@ -123,4 +125,7 @@ ul {
 .social-medias li a{
   color: white;
   font-size: 1.5rem;
+}
+.no-inherit {
+  all: unset;
 }
