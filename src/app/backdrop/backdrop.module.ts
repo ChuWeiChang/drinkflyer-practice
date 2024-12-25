@@ -1,9 +1,13 @@
-import {Injectable, EventEmitter, RendererFactory2, Renderer2} from '@angular/core';
+import {NgModule, Renderer2, RendererFactory2} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { EventEmitter } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
+@NgModule({
+  imports: [
+    CommonModule
+  ]
 })
-export class BackdropService {
+export class BackdropModule {
   backdropState = new EventEmitter<boolean>();
   private isOpen = false;
   private renderer: Renderer2;
@@ -32,3 +36,4 @@ export class BackdropService {
     }
   }
 }
+

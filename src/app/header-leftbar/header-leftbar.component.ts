@@ -1,24 +1,25 @@
 import {Component} from '@angular/core';
 import {NgClass} from '@angular/common';
-import {BackdropService} from '../backdrop.service';
+import {BackdropModule} from '../backdrop/backdrop.module';
 @Component({
   selector: 'app-header-leftbar',
   imports: [
-    NgClass
+    NgClass,
+    BackdropModule
   ],
   templateUrl: './header-leftbar.component.html',
   styleUrl: './header-leftbar.component.css',
-  providers: [BackdropService],
+  providers: [BackdropModule],
 })
 export class HeaderLeftbarComponent {
   isOpen: boolean = false;
   animation: boolean = false;
   showBackdrop: boolean = false;
 
-  constructor(private backdropService: BackdropService) {}
+  constructor(private backdropModule: BackdropModule) {}
 
   ngOnInit() {
-    this.backdropService.backdropState.subscribe((state) => {
+    this.backdropModule.backdropState.subscribe((state) => {
       this.showBackdrop = state;
     });
   }
@@ -27,9 +28,9 @@ export class HeaderLeftbarComponent {
     this.isOpen = !this.isOpen;
     if (this.isOpen) {
       this.animation = true;
-      this.backdropService.openBackdrop();
+      this.backdropModule.openBackdrop();
     } else {
-      this.backdropService.closeBackdrop();
+      this.backdropModule.closeBackdrop();
       setTimeout(() => {
         this.animation = false;
       }, 500); // 500 milliseconds
