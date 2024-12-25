@@ -1,29 +1,27 @@
 import {Component, OnInit} from '@angular/core';
 import {NgClass, NgOptimizedImage} from '@angular/common';
 import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component';
-import { BackdropModule } from '../backdrop/backdrop.module';
+import { BackdropService } from '../backdrop.service';
 
 @Component({
   selector: 'app-header',
   imports: [
     NgOptimizedImage,
     HeaderLeftbarComponent,
-    NgClass,
-    BackdropModule
+    NgClass
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
-  providers: [BackdropModule],
 })
 export class HeaderComponent implements OnInit{
   isCartOpen: boolean = false;
   animation: boolean = false;
   isSearch: boolean = false;
   showBackdrop: boolean = false;
-  constructor(private backdropModule: BackdropModule) {}
+  constructor(private backdropService: BackdropService) {}
 
   ngOnInit() {
-    this.backdropModule.backdropState.subscribe((state) => {
+    this.backdropService.backdropState.subscribe((state) => {
       this.showBackdrop = state;
     });
   }
@@ -37,9 +35,9 @@ export class HeaderComponent implements OnInit{
     this.isCartOpen = !this.isCartOpen;
     if (this.isCartOpen){
       this.animation = !this.animation;
-      this.backdropModule.openBackdrop();
+      this.backdropService.openBackdrop();
     } else{
-      this.backdropModule.closeBackdrop();
+      this.backdropService.closeBackdrop();
       setTimeout(() => {this.animation = !this.animation;}, 500); // 2000 milliseconds = 2 seconds
     }
   }
