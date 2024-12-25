@@ -1,3 +1,4 @@
+/* Ensure the container takes the full viewport */
 .banner-container {
   position: relative;
   width: 100%;
@@ -7,35 +8,7 @@
   margin: 0 auto;
 }
 
-.responsive-banner#big{
-  visibility: hidden;
-}
-
-.image-and-sticker img.sticker {
-  position: absolute;
-  top: 5%;
-  right: 0;
-  width: 250px;
-  height: auto;
-  z-index: 1;
-  visibility: hidden;
-}
-
-@media (min-width: 990px) {
-  .responsive-banner#small{
-    visibility: hidden;
-  }
-  .responsive-banner#big{
-    visibility: visible;
-  }
-  .image-and-sticker img.sticker {
-    visibility: visible;
-  }
-  .banner-container {
-    aspect-ratio: 2000/839;
-  }
-}
-
+/* Styles for the responsive image */
 .image-and-sticker img.responsive-banner {
   position: absolute;
   width: 100%; /* Ensure it stretches across the container */
@@ -45,12 +18,27 @@
   z-index: 1; /* Stack it properly if needed */
 }
 
+@media (min-width: 1000px) {
+  .banner-container {
+    aspect-ratio: 2000/839;
+  }
+}
+.image-and-sticker img.sticker {
+  position: absolute;
+  top: 5%; /* Adjust to your preference */
+  right: 0; /* Adjust to your preference */
+  width: 250px;
+  height: auto;
+  z-index: 1; /* Make sure sticker is on top */
+}
+
+/*!* Style the button *!*/
 .button-container{
   position: absolute;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 1; /* Ensure it's on top of the image */
 }
 span{
   color:black;

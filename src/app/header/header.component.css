@@ -25,18 +25,16 @@
   width: 100%;
 }
 .logo-container {
-  position: relative;
   flex: 1;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin:0.75rem 0;
-  height: 100%;
-  box-sizing: border-box;
+  padding:0.75rem 0;
 }
 .logo{
-  height: 68px;
-  width: 240px;
+  /*aspect-ratio: 742 / 211;*/
+  max-height: 68px;
+  max-width: 240px;
   object-fit: contain;
 }
 app-header-leftbar{
@@ -46,12 +44,13 @@ app-header-leftbar{
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  gap:1rem;
 }
 .theme-icon{
   width: 27px;
   height: 27px;
   cursor: pointer;
+  padding-right: 1rem;
+
 }
 
 .theme-icon.user{
@@ -123,9 +122,6 @@ app-header-leftbar{
   }
 }
 @media (min-width: 990px) {
-  .logo-container{
-    height: 4.5rem;
-  }
   .theme-icon.user{
     visibility: visible;
   }
@@ -142,9 +138,7 @@ app-header-leftbar{
     }
   }
 }
-.no-inherit {
-  all: unset;
-}
+
 
 .hidden {
   display: none;
