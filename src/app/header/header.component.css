@@ -30,11 +30,10 @@
   display: flex;
   justify-content: center;
   padding:0.75rem 0;
-}
-.logo{
-  /*aspect-ratio: 742 / 211;*/
   max-height: 68px;
   max-width: 240px;
+}
+.logo{
   object-fit: contain;
 }
 app-header-leftbar{
@@ -44,13 +43,12 @@ app-header-leftbar{
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  gap:1rem;
 }
 .theme-icon{
   width: 27px;
   height: 27px;
   cursor: pointer;
-  padding-right: 1rem;
-
 }
 
 .theme-icon.user{
