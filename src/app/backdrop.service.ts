@@ -1,4 +1,4 @@
-import {Injectable, Renderer2, RendererFactory2, signal} from '@angular/core';
+import {inject, Injectable, Renderer2, RendererFactory2, signal} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -7,9 +7,10 @@ export class BackdropService {
   backdropState = signal(false);
   private isOpen = false;
   private renderer: Renderer2;
+  rendererFactory = inject(RendererFactory2)
 
-  constructor(rendererFactory: RendererFactory2) {
-    this.renderer = rendererFactory.createRenderer(null, null);
+  constructor() {
+    this.renderer = this.rendererFactory.createRenderer(null, null);
   }
   openBackdrop() {
     this.isOpen = true;
