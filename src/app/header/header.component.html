@@ -2,12 +2,18 @@
   <div class="header-panel" [class.hidden]="isSearch">
     <app-header-leftbar></app-header-leftbar>
     <div class="logo-container">
-      <img ngSrc="assets/images/header/Flyers_Logotype_Stacked_2color_ondark.png" width="240" height="68" alt="Logo" class="logo">
+      <img ngSrc="assets/images/header/Flyers_Logotype_Stacked_2color_ondark.png" fill alt="Logo" class="logo" priority>
     </div>
     <div class="right-container">
-      <svg class="theme-icon user"><use href="assets/icons/icons.svg#icon-user"></use></svg>
-      <svg class="theme-icon" (click)="toggleSearch()"><use href="assets/icons/icons.svg#icon-search"></use></svg>
-      <svg class="theme-icon" (click)="toggleCart()"><use href="assets/icons/icons.svg#icon-cart"></use></svg>
+      <button class="no-inherit">
+        <svg class="theme-icon user"><use href="assets/icons/icons.svg#icon-user"></use></svg>
+      </button>
+      <button class="no-inherit">
+        <svg class="theme-icon" (click)="toggleSearch()"><use href="assets/icons/icons.svg#icon-search"></use></svg>
+      </button>
+      <button class="no-inherit">
+        <svg class="theme-icon" (click)="toggleCart()"><use href="assets/icons/icons.svg#icon-cart"></use></svg>
+      </button>
     </div>
   </div>
   @if (isSearch){

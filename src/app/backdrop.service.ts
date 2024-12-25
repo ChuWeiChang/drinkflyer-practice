@@ -1,29 +1,26 @@
-import {NgModule, Renderer2, RendererFactory2} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { EventEmitter } from '@angular/core';
+import {inject, Injectable, Renderer2, RendererFactory2, signal} from '@angular/core';
 
-@NgModule({
-  imports: [
-    CommonModule
-  ]
+@Injectable({
+  providedIn: 'root'
 })
-export class BackdropModule {
-  backdropState = new EventEmitter<boolean>();
+export class BackdropService {
+  backdropState = signal(false);
   private isOpen = false;
   private renderer: Renderer2;
+  rendererFactory = inject(RendererFactory2)
 
-  constructor(rendererFactory: RendererFactory2) {
-    this.renderer = rendererFactory.createRenderer(null, null);
+  constructor() {
+    this.renderer = this.rendererFactory.createRenderer(null, null);
   }
   openBackdrop() {
     this.isOpen = true;
-    this.backdropState.emit(this.isOpen);
+    this.backdropState.set(this.isOpen);
     this.toggleBodyScroll(true);
   }
 
   closeBackdrop() {
     this.isOpen = false;
-    this.backdropState.emit(this.isOpen);
+    this.backdropState.set(this.isOpen);
     this.toggleBodyScroll(false);
   }
 
@@ -36,4 +33,3 @@ export class BackdropModule {
     }
   }
 }
-
