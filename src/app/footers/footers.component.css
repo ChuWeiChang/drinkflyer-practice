@@ -185,3 +185,8 @@ a{
   text-decoration: none;
   color: antiquewhite;
 }
+.tiktok{
+  position: relative;
+  top:-5px;
+  fill: rgb(250, 235, 215);
+}
