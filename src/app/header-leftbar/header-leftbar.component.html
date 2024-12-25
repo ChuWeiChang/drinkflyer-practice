@@ -1,9 +1,7 @@
 <div class="left-bar">
-  <button class="no-inherit">
-    <svg class="theme-icon" width="27" height="27" (click)="toggleSidebar()">
-      <use href="assets/icons/icons.svg#icon-menu"></use>
-    </svg>
-  </button>
+  <svg class="theme-icon" width="27" height="27" (click)="toggleSidebar()">
+    <use href="assets/icons/icons.svg#icon-menu"></use>
+  </svg>
 </div>
 
 <div class="backdrop" [ngClass]="{'open': showBackdrop}" (click)="toggleSidebar()"></div>
@@ -26,9 +24,7 @@
   </div>
   <form class="search-form">
     <input type="search" placeholder="Search">
-    <button class="no-inherit">
     <svg class="theme-icon searching"><use href="assets/icons/icons.svg#icon-search"></use></svg>
-    </button>
   </form>
 
   <ul class="social-medias">

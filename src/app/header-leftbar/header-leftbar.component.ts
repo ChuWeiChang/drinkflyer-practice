@@ -1,35 +1,39 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgClass} from '@angular/common';
-import {BackdropService} from '../backdrop.service';
+import {BackdropModule} from '../backdrop/backdrop.module';
 @Component({
   selector: 'app-header-leftbar',
   imports: [
     NgClass,
+    BackdropModule
   ],
   templateUrl: './header-leftbar.component.html',
   styleUrl: './header-leftbar.component.css',
+  providers: [BackdropModule],
 })
 export class HeaderLeftbarComponent implements OnInit {
   isOpen: boolean = false;
   animation: boolean = false;
   showBackdrop: boolean = false;
-  backdropService = inject(BackdropService);
+
+  constructor(private backdropModule: BackdropModule) {}
 
   ngOnInit() {
-    this.showBackdrop = this.backdropService.backdropState();
+    this.backdropModule.backdropState.subscribe((state) => {
+      this.showBackdrop = state;
+    });
   }
 
   toggleSidebar() {
     this.isOpen = !this.isOpen;
     if (this.isOpen) {
       this.animation = true;
-      this.backdropService.openBackdrop();
+      this.backdropModule.openBackdrop();
     } else {
-      this.backdropService.closeBackdrop();
+      this.backdropModule.closeBackdrop();
       setTimeout(() => {
         this.animation = false;
       }, 500); // 500 milliseconds
     }
-    this.showBackdrop = this.backdropService.backdropState();
   }
 }
