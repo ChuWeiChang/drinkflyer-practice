@@ -28,7 +28,6 @@ img {
     height:80vh;
   }
   .image-wrapper {
-    /*height:fit-content;*/
     height: 100%;
     box-sizing: border-box;
   }
