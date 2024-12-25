@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {NgClass, NgIf, NgOptimizedImage} from '@angular/common';
+import {Component, OnInit} from '@angular/core';
+import {NgClass, NgOptimizedImage} from '@angular/common';
 import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component';
 import { BackdropModule } from '../backdrop/backdrop.module';
 
@@ -8,7 +8,6 @@ import { BackdropModule } from '../backdrop/backdrop.module';
   imports: [
     NgOptimizedImage,
     HeaderLeftbarComponent,
-    NgIf,
     NgClass,
     BackdropModule
   ],
@@ -16,7 +15,7 @@ import { BackdropModule } from '../backdrop/backdrop.module';
   styleUrl: './header.component.css',
   providers: [BackdropModule],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
   isCartOpen: boolean = false;
   animation: boolean = false;
   isSearch: boolean = false;
