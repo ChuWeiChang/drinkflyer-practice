@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {NgClass} from '@angular/common';
 import {BackdropService} from '../backdrop.service';
 @Component({
@@ -13,13 +13,10 @@ export class HeaderLeftbarComponent implements OnInit {
   isOpen: boolean = false;
   animation: boolean = false;
   showBackdrop: boolean = false;
-
-  constructor(private backdropService: BackdropService) {}
+  backdropService = inject(BackdropService);
 
   ngOnInit() {
-    this.backdropService.backdropState.subscribe((state) => {
-      this.showBackdrop = state;
-    });
+    this.showBackdrop = this.backdropService.backdropState();
   }
 
   toggleSidebar() {
@@ -33,5 +30,6 @@ export class HeaderLeftbarComponent implements OnInit {
         this.animation = false;
       }, 500); // 500 milliseconds
     }
+    this.showBackdrop = this.backdropService.backdropState();
   }
 }

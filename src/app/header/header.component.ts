@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {NgClass, NgOptimizedImage} from '@angular/common';
 import {HeaderLeftbarComponent} from '../header-leftbar/header-leftbar.component';
 import { BackdropService } from '../backdrop.service';
@@ -13,17 +13,15 @@ import { BackdropService } from '../backdrop.service';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
   isCartOpen: boolean = false;
   animation: boolean = false;
   isSearch: boolean = false;
-  showBackdrop: boolean = false;
-  constructor(private backdropService: BackdropService) {}
+  showBackdrop :boolean = false;
+  backdropService = inject(BackdropService);
 
   ngOnInit() {
-    this.backdropService.backdropState.subscribe((state) => {
-      this.showBackdrop = state;
-    });
+    this.showBackdrop = this.backdropService.backdropState();
   }
 
   toggleSearch() {
@@ -40,5 +38,6 @@ export class HeaderComponent implements OnInit{
       this.backdropService.closeBackdrop();
       setTimeout(() => {this.animation = !this.animation;}, 500); // 2000 milliseconds = 2 seconds
     }
+    this.showBackdrop = this.backdropService.backdropState();
   }
 }

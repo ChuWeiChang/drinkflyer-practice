@@ -1,10 +1,10 @@
-import {Injectable, EventEmitter, RendererFactory2, Renderer2} from '@angular/core';
+import {Injectable, Renderer2, RendererFactory2, signal} from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class BackdropService {
-  backdropState = new EventEmitter<boolean>();
+  backdropState = signal(false);
   private isOpen = false;
   private renderer: Renderer2;
 
@@ -13,13 +13,13 @@ export class BackdropService {
   }
   openBackdrop() {
     this.isOpen = true;
-    this.backdropState.emit(this.isOpen);
+    this.backdropState.set(this.isOpen);
     this.toggleBodyScroll(true);
   }
 
   closeBackdrop() {
     this.isOpen = false;
-    this.backdropState.emit(this.isOpen);
+    this.backdropState.set(this.isOpen);
     this.toggleBodyScroll(false);
   }
 
